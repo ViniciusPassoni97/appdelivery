@@ -19,12 +19,25 @@ export const ContainerSplash = StyleSheet.create({
         alignItems: 'center',
     },
     containerTextInfo: {
+        marginTop:'5%',
         width:'80%',
         margin:'auto',
     },
     containerTextInfoText: {
+        color:'#4F4F4F',
         textAlign: 'center',
         alignItems:'center',
+    },
+    containerButton: {
+        marginTop:'7%',
+        width:'90%',
+        margin:'auto',
+    },
+    containerButtonViewBtn: {
+        marginTop:'5%',
+    },
+    containerButtonBtn: {
+        
     },
     textInfo: {
         fontSize:20,
@@ -33,8 +46,8 @@ export const ContainerSplash = StyleSheet.create({
     footer: {
         alignItems:'center',
         textAlign:'center',
-        height:'65%',
-        marginTop:'40%',
+        height:'80%',
+        marginTop:'30%',
         backgroundColor:'#F6F5F5',
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40

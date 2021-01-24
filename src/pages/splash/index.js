@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View, ImageBackground, Image } from 'react-native';
+import { Text, View, ImageBackground, Image, Button } from 'react-native';
 import { ContainerSplash } from './styles';
 import SplashImage from '../../../assets/splashscreen.png';
 import Logo from '../../../assets/logo.png';
@@ -23,8 +22,13 @@ export default function Splash() {
               select the option "Contactless delivery" 
               and the courier will leave your order at the door.</Text>
             </View>
-            <View style=''>
-              
+            <View style={ContainerSplash.containerButton}>
+              <View style={ContainerSplash.containerButtonViewBtn}>
+                <Button title='Click' style={ContainerSplash.containerButtonBtn}/>
+              </View>
+              <View style={ContainerSplash.containerButtonViewBtn}>
+                <Button title='Click' style={ContainerSplash.containerButtonBtn}/>
+              </View>
             </View>
         </View>
       </ImageBackground>
