@@ -50,6 +50,9 @@ export const ContainerSplash = StyleSheet.create({
     containerButtonViewBtnDismiss: {
         marginTop:'4%',
         height:60,
+        width:'90%',
+        marginLeft:'auto',
+        marginRight:'auto',
         textAlign:'center',
         alignItems:'center',
        
@@ -57,6 +60,7 @@ export const ContainerSplash = StyleSheet.create({
     containerButtonBtnDismiss: {
         marginTop:15,
         color:'#000000',
+        width:'100%',
         fontSize:20,
         fontWeight:'bold',
     },

@@ -1,11 +1,19 @@
 import React from 'react';
-import { Text, View, ImageBackground, Image, Button } from 'react-native';
+import { Text, View, ImageBackground, Image, TouchableHighlight } from 'react-native';
 import { ContainerSplash } from './styles';
 import SplashImage from '../../../assets/splashscreen.png';
 import Logo from '../../../assets/logo.png';
 import IconSplash from '../../../assets/iconSplash.png';
+import { useNavigation } from '@react-navigation/native';
+import {RectButton} from 'react-native-gesture-handler';
 
 export default function Splash() {
+  const navigation = useNavigation();
+
+  function HandleCategories() {
+    console.log('Click');
+    navigation.navigate('Categories');  
+  }
   return (
     <View style={ContainerSplash.container}>
       <ImageBackground source={SplashImage} style={ContainerSplash.srcImage}>
@@ -23,11 +31,13 @@ export default function Splash() {
               and the courier will leave your order at the door.</Text>
             </View>
             <View style={ContainerSplash.containerButton}>
-              <View style={ContainerSplash.containerButtonViewBtn}>
-                <Text title='Click' style={ContainerSplash.containerButtonBtn}>order now</Text>
-              </View>
+                <RectButton style={ContainerSplash.containerButtonViewBtn} onPress={HandleCategories}>
+                  <Text title='Click' style={ContainerSplash.containerButtonBtn}>order now</Text>
+                </RectButton>
               <View style={ContainerSplash.containerButtonViewBtnDismiss}>
-                <Text title='Click' style={ContainerSplash.containerButtonBtnDismiss}>dismiss</Text>
+                <RectButton style={ContainerSplash.containerButtonViewBtn}>
+                  <Text title='Click' style={ContainerSplash.containerButtonBtnDismiss}>dismiss</Text>
+                </RectButton>
               </View>
             </View>
         </View>
