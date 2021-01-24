@@ -6,7 +6,8 @@ export const ContainerSplash = StyleSheet.create({
         width:'100%',
         height:'100%',
     },
-    containerDivImg:{
+    containerImgLogo:{
+        marginTop:'10%',
     },
     srcImage: {
         flex:1,
@@ -15,7 +16,7 @@ export const ContainerSplash = StyleSheet.create({
     },
     footer: {
         height:'60%',
-        marginTop:'80%',
+        marginTop:'50%',
         backgroundColor:'#f3f3f3',
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40
