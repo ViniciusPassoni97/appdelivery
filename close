@@ -1,0 +1,35 @@
+[33mcommit b569f19a17ac52275481b6a6b81f296e15b5e463[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sat Jan 23 21:22:26 2021 -0300
+
+    Criando containerImgLogo em src/pages/splash
+
+[33mcommit e4d3fca5435197ab9018db08b01d8a89f30c31be[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sat Jan 23 21:13:30 2021 -0300
+
+    Posição de ContainerSplash.footer em src/pages/splash
+
+[33mcommit 31891415b7b870f74f63b28cb352f5e0edc26654[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Fri Jan 22 22:54:27 2021 -0300
+
+    Iniciando criação de src/pages/splash
+
+[33mcommit 973a7cf884d7b759df501b3faf7344cd8a222c02[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 21 22:01:18 2021 -0300
+
+    Adicionando src/pages/splash
+
+[33mcommit 2584915bcdf67f95cbd2e87247cfa1af4b859ff0[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 21 21:46:20 2021 -0300
+
+    Primeiro commit
+
+[33mcommit 416cb21a1f0c94ec9b93a3e6cb94e9c501d65c28[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 21 21:24:15 2021 -0300
+
+    Created a new Expo app

@@ -14,10 +14,28 @@ export const ContainerSplash = StyleSheet.create({
         width:'100%',
         height:'100%',
     },
+    containerTextTitle: {
+        marginTop:'5%',
+        alignItems: 'center',
+    },
+    containerTextInfo: {
+        width:'80%',
+        margin:'auto',
+    },
+    containerTextInfoText: {
+        textAlign: 'center',
+        alignItems:'center',
+    },
+    textInfo: {
+        fontSize:20,
+        fontWeight:'bold',
+    },
     footer: {
-        height:'60%',
-        marginTop:'50%',
-        backgroundColor:'#f3f3f3',
+        alignItems:'center',
+        textAlign:'center',
+        height:'65%',
+        marginTop:'40%',
+        backgroundColor:'#F6F5F5',
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40
     }
