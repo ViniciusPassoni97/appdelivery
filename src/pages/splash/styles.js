@@ -31,13 +31,34 @@ export const ContainerSplash = StyleSheet.create({
     containerButton: {
         marginTop:'7%',
         width:'90%',
-        margin:'auto',
+        marginLeft:'auto',
+        marginRight:'auto',
     },
     containerButtonViewBtn: {
-        marginTop:'5%',
+        marginTop:'4%',
+        height:60,
+        textAlign:'center',
+        alignItems:'center',
+        backgroundColor:'#0BCE83',
     },
     containerButtonBtn: {
-        
+        marginTop:15,
+        color:'#ffffff',
+        fontSize:20,
+        fontWeight:'bold',
+    },
+    containerButtonViewBtnDismiss: {
+        marginTop:'4%',
+        height:60,
+        textAlign:'center',
+        alignItems:'center',
+       
+    },
+    containerButtonBtnDismiss: {
+        marginTop:15,
+        color:'#000000',
+        fontSize:20,
+        fontWeight:'bold',
     },
     textInfo: {
         fontSize:20,
@@ -46,8 +67,8 @@ export const ContainerSplash = StyleSheet.create({
     footer: {
         alignItems:'center',
         textAlign:'center',
-        height:'80%',
-        marginTop:'30%',
+        height:'70%',
+        marginTop:'40%',
         backgroundColor:'#F6F5F5',
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40

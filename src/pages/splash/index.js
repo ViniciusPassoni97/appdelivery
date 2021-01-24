@@ -24,10 +24,10 @@ export default function Splash() {
             </View>
             <View style={ContainerSplash.containerButton}>
               <View style={ContainerSplash.containerButtonViewBtn}>
-                <Button title='Click' style={ContainerSplash.containerButtonBtn}/>
+                <Text title='Click' style={ContainerSplash.containerButtonBtn}>order now</Text>
               </View>
-              <View style={ContainerSplash.containerButtonViewBtn}>
-                <Button title='Click' style={ContainerSplash.containerButtonBtn}/>
+              <View style={ContainerSplash.containerButtonViewBtnDismiss}>
+                <Text title='Click' style={ContainerSplash.containerButtonBtnDismiss}>dismiss</Text>
               </View>
             </View>
         </View>
