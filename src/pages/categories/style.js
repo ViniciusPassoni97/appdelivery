@@ -2,17 +2,20 @@ import {StyleSheet} from 'react-native';
 
 export const StyleCategories = StyleSheet.create({
     containerCategories:{
-        marginTop:80,
+        marginTop:50,
         height: '100%',
     },
     containerCategoriesHeader:{
-            
+        padding:20,
     },
     containerCategoriesHeaderVector:{
-            
+        width:12,
+        height:26
     },
     containerCategoriesHeaderText:{
-            
+        marginTop:20,
+        fontSize:30,
+        fontWeight: 'bold'
     },
     containerCategoriesCard: {
 
