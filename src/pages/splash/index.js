@@ -34,11 +34,9 @@ export default function Splash() {
                 <RectButton style={ContainerSplash.containerButtonViewBtn} onPress={HandleCategories}>
                   <Text title='Click' style={ContainerSplash.containerButtonBtn}>order now</Text>
                 </RectButton>
-              <View style={ContainerSplash.containerButtonViewBtnDismiss}>
-                <RectButton style={ContainerSplash.containerButtonViewBtn}>
-                  <Text title='Click' style={ContainerSplash.containerButtonBtnDismiss}>dismiss</Text>
+                <RectButton style={ContainerSplash.containerButtonDismiss}>
+                  <Text title='Dismiss' style={ContainerSplash.containerButtonBtnDismiss}>dismiss</Text>
                 </RectButton>
-              </View>
             </View>
         </View>
       </ImageBackground>
