@@ -4,8 +4,10 @@ export const StyleMenu = StyleSheet.create({
     containerMenu:{
         display:'flex',
         justifyContent: 'space-between',
-        backgroundColor:'#dddddd',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 2,
     },
     containerMenuItem:{
         height:94,
