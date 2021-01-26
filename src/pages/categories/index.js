@@ -6,10 +6,17 @@ import Vector from '../../../assets/vector.png';
 
 export default function Categories(){
     return (
-       <View style={StyleCategories.containerMenu}>
-            <Image style='' source={Vector} />
-            <Text>Categories</Text>
-            <Menu />
+       <View style={StyleCategories.containerCategories}>
+           <View style={StyleCategories.containerCategoriesHeader}>
+                <Image style={StyleCategories.containerCategoriesHeaderVector} source={Vector} />
+                <Text style={StyleCategories.containerCategoriesHeaderText} >Categories</Text>
+           </View>
+           <View style={StyleCategories.containerCategoriesCard}>
+               
+            </View>
+            <View style={StyleCategories.containerCategoriesMenu}>
+                <Menu />
+            </View>
        </View>
     )
 }

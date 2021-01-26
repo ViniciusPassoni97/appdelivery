@@ -1,8 +1,23 @@
 import {StyleSheet} from 'react-native';
 
 export const StyleCategories = StyleSheet.create({
-    containerMenu:{
+    containerCategories:{
         marginTop:80,
         height: '100%',
+    },
+    containerCategoriesHeader:{
+            
+    },
+    containerCategoriesHeaderVector:{
+            
+    },
+    containerCategoriesHeaderText:{
+            
+    },
+    containerCategoriesCard: {
+
+    },
+    containerCategoriesMenu: {
+        
     }
 });
