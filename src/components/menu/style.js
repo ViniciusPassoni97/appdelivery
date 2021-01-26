@@ -1,10 +1,18 @@
 import {StyleSheet} from 'react-native';
 
-const StyleMenu = StyleSheet.create({
+export const StyleMenu = StyleSheet.create({
     containerMenu:{
-        width:'100%',
-        height:70,
-        position:'relative',
-        bottom:0
+        display:'flex',
+        justifyContent: 'space-between',
+        backgroundColor:'#dddddd',
+        flexDirection: 'row'
+    },
+    containerMenuItem:{
+        height:94,
+        padding:25
+    },
+    containerMenuImage:{
+        width:45,
+        height:37
     }
 });
