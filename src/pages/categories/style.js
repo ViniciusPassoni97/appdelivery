@@ -7,6 +7,8 @@ export const StyleCategories = StyleSheet.create({
     },
     containerCategoriesHeader:{
         padding:20,
+        height:'25%',
+        backgroundColor:'#666666'
     },
     containerCategoriesHeaderVector:{
         width:12,
@@ -18,9 +20,10 @@ export const StyleCategories = StyleSheet.create({
         fontWeight: 'bold'
     },
     containerCategoriesCard: {
-
+        padding:20,
+        height:'60%',
     },
     containerCategoriesMenu: {
-        
+        height:'15%'
     }
 });
