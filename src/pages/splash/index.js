@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, ImageBackground, Image, TouchableHighlight } from 'react-native';
+import { Text, View, ImageBackground, Image } from 'react-native';
 import { ContainerSplash } from './styles';
 import SplashImage from '../../../assets/splashscreen.png';
 import Logo from '../../../assets/logo.png';

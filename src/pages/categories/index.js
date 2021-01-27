@@ -7,6 +7,8 @@ import { useNavigation } from '@react-navigation/native';
 import {RectButton} from 'react-native-gesture-handler';
 
 export default function Categories(){
+    const navigation = useNavigation();
+
     function HandleSlash() {
         console.log('Splash');
         navigation.navigate('Splash');  
@@ -14,10 +16,12 @@ export default function Categories(){
     return (
        <View style={StyleCategories.containerCategories}>
            <View style={StyleCategories.containerCategoriesHeader}>
-                <Image style={StyleCategories.containerCategoriesHeaderVector} source={Vector} onPress={HandleSlash}/>
+                <RectButton onPress={HandleSlash}>
+                    <Image source={Vector} style={StyleCategories.containerCategoriesHeaderVector}/>
+                </RectButton>
                 <Text style={StyleCategories.containerCategoriesHeaderText} >Categories</Text>
                 <TextInput
-                    style={{ height: 55, borderColor: 'gray', borderWidth: 1,marginTop:15 }}
+                    style={StyleCategories.containerCategoriesHeaderInput}
                 />
            </View>
            <View style={StyleCategories.containerCategoriesCard}>
