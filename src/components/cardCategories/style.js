@@ -11,15 +11,17 @@ export const StyleCardCategory =StyleSheet.create({
 
     },
     containerCategoryText:{
-
+        marginTop:10,
+        padding:5
     },
     categoryText:{
-
+        fontSize:19,
+        fontWeight:'bold'
     },
     containerCategoryQuantity:{
-
+        padding:5
     },
     categoryQuantity:{
-        
+
     }
 });

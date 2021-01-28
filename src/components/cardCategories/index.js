@@ -15,7 +15,7 @@ export default function CardCategories(props) {
                     <Text style={StyleCardCategory.categoryText}>Vegetables</Text>
                 </View>
                 <View style={StyleCardCategory.containerCategoryQuantity}>
-                    <Text style={StyleCardCategory.categoryQuantity}>( 39 )</Text>
+                    <Text style={StyleCardCategory.categoryQuantity}>(39)</Text>
                 </View>
             </RectButton>
         </View>
