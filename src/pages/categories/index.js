@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View,Image,TextInput } from 'react-native';
+import { Text, View,Image,TextInput,ScrollView } from 'react-native';
 import Menu from '../../components/menu/index';
 import CardCategories from '../../components/cardCategories/index';
 import {StyleCategories} from './style';
@@ -26,9 +26,11 @@ export default function Categories(){
                 />
            </View>
            <View style={StyleCategories.containerCategoriesCard}>
-               <CardCategories />
-               <CardCategories />
-               <CardCategories />
+               <ScrollView style={{ flex: 1 }}>
+                    <CardCategories />
+                    <CardCategories />
+                    <CardCategories />
+               </ScrollView>
             </View>
             <View style={StyleCategories.containerCategoriesMenu}>
                 <Menu />
