@@ -8,14 +8,14 @@ export default function CardCategories(props) {
     return(
         <View style={StyleCardCategory.containerCategory}>
             <RectButton>
-                <View style=''>
-                    <Image source={Vegetables}/>
+                <View style={StyleCardCategory.containerCategoryImage}>
+                    <Image style={StyleCardCategory.categoryImage} source={Vegetables}/>
                 </View>
-                <View style=''>
-                    <Text>Vegetables</Text>
+                <View style={StyleCardCategory.containerCategoryText}>
+                    <Text style={StyleCardCategory.categoryText}>Vegetables</Text>
                 </View>
-                <View style=''>
-                    <Text>39</Text>
+                <View style={StyleCardCategory.containerCategoryQuantity}>
+                    <Text style={StyleCardCategory.categoryQuantity}>( 39 )</Text>
                 </View>
             </RectButton>
         </View>
