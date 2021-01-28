@@ -33,6 +33,8 @@ export const StyleCategories = StyleSheet.create({
         padding:15
     },
     containerCategoriesCard: {
+        display: 'flex',
+        flexDirection: 'row',
         padding:20,
         height:'60%',
     },
