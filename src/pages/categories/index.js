@@ -27,9 +27,18 @@ export default function Categories(){
            </View>
            <View style={StyleCategories.containerCategoriesCard}>
                <ScrollView style={{ flex: 1 }}>
-                    <CardCategories />
-                    <CardCategories />
-                    <CardCategories />
+                   <View style={StyleCategories.containerCategoriesScrow}>
+                        <CardCategories title='teste' number='12'/>
+                        <CardCategories />
+                   </View>
+                   <View style={StyleCategories.containerCategoriesScrow}>
+                        <CardCategories />
+                        <CardCategories />
+                   </View>
+                   <View style={StyleCategories.containerCategoriesScrow}>
+                        <CardCategories />
+                        <CardCategories />
+                   </View>
                </ScrollView>
             </View>
             <View style={StyleCategories.containerCategoriesMenu}>
