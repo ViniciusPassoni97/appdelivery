@@ -17,6 +17,7 @@ export default function CardCategories(props) {
                     <Text style={StyleCardCategory.categoryQuantity}>({props.number})</Text>
                 </View>
             </RectButton>
+            {props.children}
         </View>
     )
 }

@@ -9,18 +9,18 @@ import {RectButton} from 'react-native-gesture-handler';
 export default function Menu() {
     return(
         <View style={StyleMenu.containerMenu}>
-            <View style={StyleMenu.containerMenuItem}>
-                <RectButton>
+            <View>
+                <RectButton style={StyleMenu.containerMenuItem}>
                     <Image style={StyleMenu.containerMenuImage} source={Grid} />
                 </RectButton>
             </View>
-            <View style={StyleMenu.containerMenuItem}>
-                <RectButton>
+            <View>
+                <RectButton style={StyleMenu.containerMenuItem}>
                     <Image style={StyleMenu.containerMenuImage} source={User} />
                 </RectButton>
             </View >
-            <View style={StyleMenu.containerMenuItem}>
-                <RectButton>
+            <View>
+                <RectButton style={StyleMenu.containerMenuItem}>
                     <Image style={StyleMenu.containerMenuImage} source={Shopping} />
                 </RectButton>
             </View>

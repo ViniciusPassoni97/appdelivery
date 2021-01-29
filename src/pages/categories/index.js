@@ -19,7 +19,11 @@ export default function Categories(){
     function HandleSlash() {
         console.log('Splash');
         navigation.navigate('Splash');  
-      }
+    }
+    function HandleIten() {
+        console.log('Item');
+        navigation.navigate('Splash'); 
+    }
     return (
        <View style={StyleCategories.containerCategories}>
            <View style={StyleCategories.containerCategoriesHeader}>
@@ -34,7 +38,9 @@ export default function Categories(){
            <View style={StyleCategories.containerCategoriesCard}>
                <ScrollView style={{ flex: 1 }}>
                    <View style={StyleCategories.containerCategoriesScrow}>
-                        <CardCategories urlImage={VegetablesIcon} title='Vegetables' number='12'/>
+                       <RectButton onClick={HandleIten}>
+                            <CardCategories urlImage={VegetablesIcon} title='Vegetables' number='12'/>
+                       </RectButton>
                         <CardCategories urlImage={FruitsIcon} title='Fruits' number='39'/>
                    </View>
                    <View style={StyleCategories.containerCategoriesScrow}>
