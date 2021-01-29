@@ -6,6 +6,12 @@ import {StyleCategories} from './style';
 import Vector from '../../../assets/vector.png';
 import { useNavigation } from '@react-navigation/native';
 import {RectButton} from 'react-native-gesture-handler';
+import VegetablesIcon from '../../../assets/vegetables.png';
+import FruitsIcon from '../../../assets/fruits.png';
+import BreadIcon from '../../../assets/bread.png';
+import SweetsIcon from '../../../assets/sweets.png';
+import SpaghettiIcon from '../../../assets/spaghetti.png';
+import CoffeIcon from '../../../assets/coffe.png';
 
 export default function Categories(){
     const navigation = useNavigation();
@@ -28,16 +34,16 @@ export default function Categories(){
            <View style={StyleCategories.containerCategoriesCard}>
                <ScrollView style={{ flex: 1 }}>
                    <View style={StyleCategories.containerCategoriesScrow}>
-                        <CardCategories title='teste' number='12'/>
-                        <CardCategories />
+                        <CardCategories urlImage={VegetablesIcon} title='Vegetables' number='12'/>
+                        <CardCategories urlImage={FruitsIcon} title='Fruits' number='39'/>
                    </View>
                    <View style={StyleCategories.containerCategoriesScrow}>
-                        <CardCategories />
-                        <CardCategories />
+                        <CardCategories urlImage={BreadIcon} title='Bread' number='9'/>
+                        <CardCategories urlImage={SweetsIcon} title='Sweets' number='21'/>
                    </View>
                    <View style={StyleCategories.containerCategoriesScrow}>
-                        <CardCategories />
-                        <CardCategories />
+                        <CardCategories urlImage={SpaghettiIcon} title='Spaghetti' number='7'/>
+                        <CardCategories urlImage={CoffeIcon} title='Coffe' number='16'/>
                    </View>
                </ScrollView>
             </View>
