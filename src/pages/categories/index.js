@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View,Image,TextInput,ScrollView } from 'react-native';
+import { Text, View,Image,TextInput,ScrollView,TouchableNativeFeedback } from 'react-native';
 import Menu from '../../components/menu/index';
 import CardCategories from '../../components/cardCategories/index';
 import {StyleCategories} from './style';
@@ -20,10 +20,11 @@ export default function Categories(){
         console.log('Splash');
         navigation.navigate('Splash');  
     }
+
     function HandleIten() {
         console.log('Item');
-        navigation.navigate('Splash'); 
     }
+
     return (
        <View style={StyleCategories.containerCategories}>
            <View style={StyleCategories.containerCategoriesHeader}>
@@ -38,18 +39,40 @@ export default function Categories(){
            <View style={StyleCategories.containerCategoriesCard}>
                <ScrollView style={{ flex: 1 }}>
                    <View style={StyleCategories.containerCategoriesScrow}>
-                       <RectButton onClick={HandleIten}>
-                            <CardCategories urlImage={VegetablesIcon} title='Vegetables' number='12'/>
-                       </RectButton>
-                        <CardCategories urlImage={FruitsIcon} title='Fruits' number='39'/>
+                       <TouchableNativeFeedback onPress={HandleIten}>
+                            <RectButton >
+                                <CardCategories urlImage={VegetablesIcon} title='Vegetables' number='12'/>
+                            </RectButton>
+                       </TouchableNativeFeedback>
+                       <TouchableNativeFeedback onPress={HandleIten}>
+                            <RectButton>
+                                <CardCategories urlImage={FruitsIcon} title='Fruits' number='39'/>
+                            </RectButton>
+                       </TouchableNativeFeedback>
                    </View>
                    <View style={StyleCategories.containerCategoriesScrow}>
-                        <CardCategories urlImage={BreadIcon} title='Bread' number='9'/>
-                        <CardCategories urlImage={SweetsIcon} title='Sweets' number='21'/>
+                        <TouchableNativeFeedback onPress={HandleIten}>
+                            <RectButton>
+                                <CardCategories urlImage={BreadIcon} title='Bread' number='9'/>
+                            </RectButton>
+                        </TouchableNativeFeedback>
+                        <TouchableNativeFeedback onPress={HandleIten}>
+                            <RectButton>
+                                <CardCategories urlImage={SweetsIcon} title='Sweets' number='21'/>
+                            </RectButton>
+                        </TouchableNativeFeedback>
                    </View>
                    <View style={StyleCategories.containerCategoriesScrow}>
-                        <CardCategories urlImage={SpaghettiIcon} title='Spaghetti' number='7'/>
-                        <CardCategories urlImage={CoffeIcon} title='Coffe' number='16'/>
+                        <TouchableNativeFeedback onPress={HandleIten}>
+                            <RectButton>
+                                <CardCategories urlImage={SpaghettiIcon} title='Spaghetti' number='7'/>
+                            </RectButton>
+                        </TouchableNativeFeedback>
+                        <TouchableNativeFeedback onPress={HandleIten}>
+                            <RectButton>
+                                <CardCategories urlImage={CoffeIcon} title='Coffe' number='16'/>
+                            </RectButton>
+                        </TouchableNativeFeedback>
                    </View>
                </ScrollView>
             </View>
