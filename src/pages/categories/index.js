@@ -17,12 +17,11 @@ export default function Categories(){
     const navigation = useNavigation();
 
     function HandleSlash() {
-        console.log('Splash');
         navigation.navigate('Splash');  
     }
 
     function HandleIten() {
-        console.log('Item');
+        navigation.navigate('Item'); 
     }
 
     return (
@@ -39,8 +38,8 @@ export default function Categories(){
            <View style={StyleCategories.containerCategoriesCard}>
                <ScrollView style={{ flex: 1 }}>
                    <View style={StyleCategories.containerCategoriesScrow}>
-                       <TouchableNativeFeedback onPress={HandleIten}>
-                            <RectButton >
+                       <TouchableNativeFeedback onPress={HandleIten}> 
+                            <RectButton>
                                 <CardCategories urlImage={VegetablesIcon} title='Vegetables' number='12'/>
                             </RectButton>
                        </TouchableNativeFeedback>

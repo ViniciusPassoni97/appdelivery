@@ -11,7 +11,6 @@ export default function Splash() {
   const navigation = useNavigation();
 
   function HandleCategories() {
-    console.log('Click');
     navigation.navigate('Categories');  
   }
   return (

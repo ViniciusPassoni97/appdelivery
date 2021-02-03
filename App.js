@@ -2,19 +2,21 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import Categories from './src/pages/categories/index';
 import Splash from './src/pages/splash/index.js';
+import Item from './src/pages/item/index';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-const Stack = createStackNavigator();
+const {Navigator, Screen} = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="Splash" component={Splash}/>
-      <Stack.Screen name="Categories" component={Categories} />
-    </Stack.Navigator>
-  </NavigationContainer>
+      <Navigator screenOptions={{headerShown: false}}>
+        <Screen name="Splash" component={Splash}/>
+        <Screen name="Categories" component={Categories}/>
+        <Screen name="Item" component={Item}/>
+      </Navigator>
+    </NavigationContainer>
   );
 }
 
