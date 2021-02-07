@@ -3,7 +3,7 @@ import {View,Text,Image,TextInput,ScrollView} from 'react-native';
 import { StyleCategories } from './style';
 import {RectButton} from 'react-native-gesture-handler';
 import Vector from '../../../assets/vector.png';
-
+import ItemCard from '../../../src/components/cardItens/index';
 
 export default function Item(){
     return(
@@ -20,19 +20,19 @@ export default function Item(){
            <View style={StyleCategories.containerItensScrow}>
                 <ScrollView style={{ flex:1 }}>
                     <View style=''>
-                        <Text>Item</Text>
+                        <ItemCard/>
                     </View>
                     <View style=''>
-                        <Text>Item</Text>
+                        <ItemCard/>
                     </View>
                     <View style=''>
-                        <Text>Item</Text>
+                        <ItemCard/>
                     </View>
                     <View style=''>
-                        <Text>Item</Text>
+                        <ItemCard/>
                     </View>
                     <View style=''>
-                        <Text>Item</Text>
+                        <ItemCard/>
                     </View>
                 </ScrollView>
            </View>
