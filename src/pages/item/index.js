@@ -4,12 +4,19 @@ import { StyleCategories } from './style';
 import {RectButton} from 'react-native-gesture-handler';
 import Vector from '../../../assets/vector.png';
 import ItemCard from '../../../src/components/cardItens/index';
+import Menu from '../../../src/components/menu';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Item(){
+    const navigation = useNavigation();
+
+    function handelButtonExit(){
+        navigation.navigate('Categories');  
+    }
     return(
         <View style={StyleCategories.container}>
             <View style={StyleCategories.containerItensHeader}>
-                <RectButton>
+                <RectButton onPress={handelButtonExit}>
                     <Image source={Vector} style={StyleCategories.containerItensHeaderImg}/>
                 </RectButton>
                 <Text style={StyleCategories.containerItensHeaderText} >Vegetables</Text>
@@ -35,6 +42,9 @@ export default function Item(){
                         <ItemCard title='Boston Lettuce' unidade='KG' valour={'5.2'}/>
                     </View>
                 </ScrollView>
+           </View>
+           <View>
+              <Menu />
            </View>
         </View>
     )
