@@ -11,8 +11,8 @@ export default function cardItens(props) {
             <View>
                 <Image source={Boston} />
             </View>
-            <View>
-                <Text>{props.title}</Text>
+            <View style=''>
+                <Text style=''>{props.title}</Text>
                 <View>
                     <View style={containerCardItem.containerItem}>
                         <Text>{props.valour}</Text>
