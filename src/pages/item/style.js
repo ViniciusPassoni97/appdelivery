@@ -31,4 +31,7 @@ export const StyleCategories = StyleSheet.create({
         borderRadius:20,
         padding:15
     },
+    containerItensScrow: {
+        height:'60%',
+    }
 });
