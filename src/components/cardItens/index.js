@@ -11,19 +11,19 @@ export default function cardItens(props) {
             <View>
                 <Image source={Boston} />
             </View>
-            <View style=''>
-                <Text style=''>{props.title}</Text>
+            <View style={containerCardItem.containerItemInfo}>
+                <Text style={containerCardItem.containerItemInfoTitle}>{props.title}</Text>
                 <View>
-                    <View style={containerCardItem.containerItem}>
-                        <Text>{props.valour}</Text>
-                        <Text> R$ / </Text>
-                        <Text>{props.unidade}</Text>
+                    <View style={containerCardItem.containerItemInfoValuor}>
+                        <Text style={containerCardItem.containerItemInfoTextValuor}>{props.valour}</Text>
+                        <Text style={containerCardItem.containerItemInfoText}> R$ / </Text>
+                        <Text style={containerCardItem.containerItemInfoText}>{props.unidade}</Text>
                     </View>
-                    <View style={containerCardItem.containerItem}>
+                    <View style={containerCardItem.containerItemInfoButons}>
                         <RectButton>
                             <TextInput />
                         </RectButton>
-                        <RectButton>
+                        <RectButton style={containerCardItem.containerItemButtonShopping}>
                             <Image source={ShoppingItem}/>
                         </RectButton>
                     </View>
