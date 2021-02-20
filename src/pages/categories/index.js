@@ -75,9 +75,6 @@ export default function Categories(){
                    </View>
                </ScrollView>
             </View>
-            <View style={StyleCategories.containerCategoriesMenu}>
-                <Menu />
-            </View>
        </View>
     )
 }

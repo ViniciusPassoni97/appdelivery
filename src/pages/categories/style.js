@@ -36,12 +36,10 @@ export const StyleCategories = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         padding:20,
-        height:'60%',
+        height:'75%',
     },
     containerCategoriesScrow:{
         display: 'flex',
         flexDirection: 'row',
-    },
-    containerCategoriesMenu: {
     }
 });

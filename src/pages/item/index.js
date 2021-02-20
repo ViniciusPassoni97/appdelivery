@@ -43,9 +43,6 @@ export default function Item(){
                     </View>
                 </ScrollView>
            </View>
-           <View>
-              <Menu />
-           </View>
         </View>
     )
 }
