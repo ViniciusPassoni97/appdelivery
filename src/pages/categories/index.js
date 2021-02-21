@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, View,Image,TextInput,ScrollView,TouchableNativeFeedback } from 'react-native';
-import Menu from '../../components/menu/index';
 import CardCategories from '../../components/cardCategories/index';
 import {StyleCategories} from './style';
 import Vector from '../../../assets/vector.png';
