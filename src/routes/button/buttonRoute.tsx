@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Shopping from '../../pages/shopping/index';
+import Info from '../../pages/info/index';
 import Categories from '../../pages/categories';
 import {AntDesign,Entypo,Fontisto  } from '@expo/vector-icons';
 
@@ -25,12 +26,12 @@ export default function MyTabs() {
           width:60,
           height:35
         },
-        inactiveBackgroundColor:'#fafafc'
+        inactiveBackgroundColor:'#f3f3f3'
       }}
     >
       <Screen 
       name="Home" 
-      component={Shopping} 
+      component={Categories} 
       options={{
         tabBarLabel:'',
         tabBarIcon:()=>{
@@ -54,7 +55,7 @@ export default function MyTabs() {
       />
       <Screen 
       name="Info" 
-      component={Shopping}
+      component={Info}
       options={{
         tabBarLabel:'',
         tabBarIcon:()=>{

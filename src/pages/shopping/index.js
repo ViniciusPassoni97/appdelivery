@@ -1,14 +1,13 @@
 import React from 'react';
-import {ScrollView,View,Text} from 'react-native';
+import {View,Text} from 'react-native';
+import {ContainerSplash} from './style';
 
 export default function Shopping() {
     return(
         <View>
-            <ScrollView style={{flex: 1}}>
-                <View>
-                    <Text>Shopping</Text>
-                </View>
-            </ScrollView>
+            <View>
+                <Text>Shopping</Text>
+            </View>
         </View>
     );
 }

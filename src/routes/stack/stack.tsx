@@ -12,8 +12,9 @@ export default function routeStack() {
     return(
         <Navigator screenOptions={{headerShown: false}}>
             <Screen name="Splash" component={Splash}/>
-            <Screen name="Categories" component={Categories}/>
             <Screen name="Item" component={RoutesButton}/>
+            <Screen name="Categories" component={RoutesButton}>
+            </Screen>   
         </Navigator>
     );
 }
