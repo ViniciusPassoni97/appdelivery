@@ -4,7 +4,6 @@ import { StyleCategories } from './style';
 import {RectButton} from 'react-native-gesture-handler';
 import Vector from '../../../assets/vector.png';
 import ItemCard from '../../../src/components/cardItens/index';
-import Menu from '../../../src/components/menu';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Item(){
