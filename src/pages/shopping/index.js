@@ -4,18 +4,18 @@ import {ContainerShopping} from './style';
 import {RectButton} from 'react-native-gesture-handler';
 import { Ionicons,FontAwesome  } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-
+import ShoppingCardItem from '../../components/cardShopping/index';
 export default function Shopping() {
     const navigation = useNavigation();
 
     function HandleCategories() {
-      navigation.navigate('Categories');  
+      navigation.navigate('Home');  
     }
     return(
         <View style={ContainerShopping.container}>
             <View style={ContainerShopping.containerHeader}>
                 <View style={ContainerShopping.containerHeaderReturn}>
-                    <RectButton>
+                    <RectButton onPress={HandleCategories}>
                         <Ionicons name="return-up-back" size={40} color="black" />
                     </RectButton>
                 </View>
@@ -29,10 +29,10 @@ export default function Shopping() {
                 </View>
             </View>
             <View style={ContainerShopping.containerItens}>
-                <Text>Item 1</Text>
-                <Text>Item 2</Text>
-                <Text>Item 3</Text>
-                <Text>Item 4</Text>
+                <ShoppingCardItem />
+                <ShoppingCardItem />
+                <ShoppingCardItem />
+                <ShoppingCardItem />
             </View>
         </View>
     );
