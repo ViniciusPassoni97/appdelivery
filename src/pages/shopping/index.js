@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,Text} from 'react-native';
+import {View,Text,ScrollView} from 'react-native';
 import {ContainerShopping} from './style';
 import {RectButton} from 'react-native-gesture-handler';
 import { Ionicons,FontAwesome  } from '@expo/vector-icons';
@@ -28,12 +28,12 @@ export default function Shopping() {
                     </RectButton>
                 </View>
             </View>
-            <View style={ContainerShopping.containerItens}>
+            <ScrollView style={ContainerShopping.containerItens}>
                 <ShoppingCardItem />
                 <ShoppingCardItem />
                 <ShoppingCardItem />
                 <ShoppingCardItem />
-            </View>
+            </ScrollView>
         </View>
     );
 }
