@@ -28,6 +28,20 @@ export const ContainerShopping = StyleSheet.create({
         fontWeight:'bold'
     },
     containerHeaderReturn:{
-        padding:10
+        marginLeft:15
+    },
+    containerHeaderCheck:{
+        marginRight:15
+    },
+    containerItens:{
+        marginTop:13,
+        shadowColor: "#000",
+        shadowOffset: {
+	        width: 0,
+	        height: 1,
+        },
+        shadowOpacity: 0.20,
+        shadowRadius: 1.41,
+        elevation: 2,
     }
 })
