@@ -30,9 +30,6 @@ export default function Categories(){
                     <Image source={Vector} style={StyleCategories.containerCategoriesHeaderVector}/>
                 </RectButton>
                 <Text style={StyleCategories.containerCategoriesHeaderText} >Categories</Text>
-                <TextInput
-                    style={StyleCategories.containerCategoriesHeaderInput}
-                />
            </View>
            <View style={StyleCategories.containerCategoriesCard}>
                <ScrollView style={{ flex: 1 }}>

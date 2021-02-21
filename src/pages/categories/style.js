@@ -2,15 +2,14 @@ import {StyleSheet} from 'react-native';
 
 export const StyleCategories = StyleSheet.create({
     containerCategories:{
-        marginTop:50,
-        height: '100%',
+        marginTop:50
     },
     containerCategoriesHeader:{
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
         elevation: 1,
         padding:20,
-        height:'25%',
+        height:'15%',
         
     },
     containerCategoriesHeaderVector:{
@@ -36,7 +35,7 @@ export const StyleCategories = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         padding:20,
-        height:'75%',
+        height:'87%',
     },
     containerCategoriesScrow:{
         display: 'flex',
