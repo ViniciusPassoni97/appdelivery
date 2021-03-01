@@ -2,7 +2,7 @@ import React from 'react';
 import {View,Text,Image,TouchableOpacity} from 'react-native';
 import {ContainerShoppingItens} from './style';
 import {RectButton} from 'react-native-gesture-handler';
-import { MaterialIcons,AntDesign } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 import Boston from '../../../assets/boston.png';
 
 export default function CardShoppingItns(props) {
