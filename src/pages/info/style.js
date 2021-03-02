@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 export const StyleInfo = StyleSheet.create({
     container:{
@@ -10,5 +10,9 @@ export const StyleInfo = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
-    }
+    },
+    containerHeaderMap:{
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height,
+    },
 });
