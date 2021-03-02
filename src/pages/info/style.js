@@ -5,14 +5,22 @@ export const StyleInfo = StyleSheet.create({
         flex: 1,
         marginTop:50,
         height: '100%',
-    },
-    containerHeader:{
         alignItems: 'center',
-        justifyContent: 'center',
         textAlign: 'center',
     },
+    containerHeader:{
+        height:50,
+    },
+    containerHeaderTitle:{
+        fontWeight:'bold',
+        fontSize:25
+    },
+    containerMap:{
+        width: '90%',
+        height: 400
+    },
     containerHeaderMap:{
-        width: Dimensions.get('window').width,
-        height: Dimensions.get('window').height,
+        width: '100%',
+        height: '100%'
     },
 });

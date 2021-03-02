@@ -7,9 +7,9 @@ export default function Info() {
     return (
         <View style={StyleInfo.container}>
             <View style={StyleInfo.containerHeader}>
-                <Text>Info</Text>
+                <Text style={StyleInfo.containerHeaderTitle}>Info</Text>
             </View>
-            <View>
+            <View style={StyleInfo.containerMap}>
                 <MapView
                     style={StyleInfo.containerHeaderMap}
                     initialRegion={{
