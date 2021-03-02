@@ -11,6 +11,9 @@ export default function Shopping() {
     function HandleCategories() {
       navigation.navigate('Home');  
     }
+    function HandleCheck() {
+        navigation.navigate('Check');  
+      }
     return(
         <View style={ContainerShopping.container}>
             <View style={ContainerShopping.containerHeader}>
@@ -23,7 +26,7 @@ export default function Shopping() {
                     <Text style={ContainerShopping.containerHeaderText}>Carrinho de Compras</Text>  
                 </View>
                 <View style={ContainerShopping.containerHeaderCheck}>
-                    <RectButton>
+                    <RectButton onPress={HandleCheck}>
                         <FontAwesome name="check-square-o" size={40} color="black" />
                     </RectButton>
                 </View>
