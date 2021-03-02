@@ -5,13 +5,17 @@ import {ContainerCheck} from './style';
 import {RectButton} from 'react-native-gesture-handler';
 import { EvilIcons,FontAwesome5 } from '@expo/vector-icons'; 
 import MapView from 'react-native-maps';
-
+import { useNavigation } from '@react-navigation/native';
 
 export default function Check(){
+    const navigation = useNavigation();
+    function HandleCheck() {
+        navigation.navigate('Shopping');  
+    }
     return (
         <ScrollView style={ContainerCheck.container}>
             <View style={ContainerCheck.containerHeader}>
-                <RectButton>
+                <RectButton onPress={HandleCheck}>
                     <Ionicons name="return-up-back" size={40} color="black" />
                 </RectButton>
                 <Text style={ContainerCheck.containerHeaderText}>Confira as Informações</Text>
