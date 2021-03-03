@@ -71,5 +71,27 @@ export const ContainerCheck = StyleSheet.create({
     containerPgModelSelected:{
         height: 80, 
         width: 200, 
-    }
+    },
+    buttonPag:{
+        flexDirection:'row',
+        width:'40%',
+        height:50,
+        textAlign:'center',
+        alignItems: 'center',
+        marginTop:15,
+        justifyContent: 'center',
+        marginBottom:30,
+        backgroundColor:'#ff0000',
+        borderRadius:15
+    },
+    containerButton:{
+        textAlign:'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    buttonPagText:{
+        fontWeight:'bold',
+        color:'#ffffff',
+        fontSize:17
+    },
 })

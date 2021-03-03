@@ -3,7 +3,7 @@ import {View,Text,ScrollView,Picker} from 'react-native';
 import { Ionicons } from '@expo/vector-icons'; 
 import {ContainerCheck} from './style';
 import {RectButton} from 'react-native-gesture-handler';
-import { EvilIcons,FontAwesome5,MaterialCommunityIcons } from '@expo/vector-icons'; 
+import { EvilIcons,FontAwesome5,MaterialCommunityIcons,MaterialIcons } from '@expo/vector-icons'; 
 import MapView from 'react-native-maps';
 import { useNavigation } from '@react-navigation/native';
 import { useEffect } from 'react';
@@ -97,7 +97,15 @@ export default function Check(){
                                     <FontAwesome5 name="address-card" size={24} color="black" />
                                 </View>
                                 <View style={ContainerCheck.containerPgOptions}>
-
+                                    <View>
+                                        <Text>Rua : 24 de maio</Text>
+                                    </View>
+                                    <View>
+                                        <Text>Bairro : Centro</Text>
+                                    </View>
+                                    <View>
+                                        <Text>Número : 501</Text>
+                                    </View>
                                 </View>
                             </View>
                         </View>
@@ -105,14 +113,11 @@ export default function Check(){
                     )}
                 </View>
             </View>
-            <View>
-                
-            </View>
-            <View>
-                
-            </View>
-            <View>
-                
+            <View style={ContainerCheck.containerButton}>
+                <RectButton style={ContainerCheck.buttonPag}>
+                    <Text style={ContainerCheck.buttonPagText}> Pagar </Text>
+                    <MaterialIcons name="payment" size={30} color="white" />
+                </RectButton>
             </View>
         </ScrollView>
     );
