@@ -55,4 +55,21 @@ export const ContainerCheck = StyleSheet.create({
         width: '100%',
         height: '100%'
     },
+    containerPgModel:{
+        marginTop:20,
+        width:'95%',
+        marginLeft:'2.5%'
+    },
+    containerPgModelHeader:{
+        flexDirection:'row',
+        justifyContent: 'space-between',
+    },
+    containerPgModelHeaderText:{
+        fontWeight:'bold',
+        fontSize:16
+    },
+    containerPgModelSelected:{
+        height: 80, 
+        width: 200, 
+    }
 })
