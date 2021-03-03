@@ -11,12 +11,15 @@ import { useEffect } from 'react';
 export default function Check(){
     const [selectedValue, setSelectedValue] = useState("domicilio");
     const [widthSelect, setWidthSelect] = useState(0);
+    const [marginTop, setMarginTop] = useState(0);
 
     useEffect(()=>{
         if(selectedValue==='domicilio'){
             setWidthSelect(200);
+            setMarginTop(10)
         }else if(selectedValue==='buscar'){
             setWidthSelect(250);
+            setMarginTop(-55);
         }
         console.log(widthSelect)
         console.log(selectedValue);
@@ -97,6 +100,10 @@ export default function Check(){
                                     <FontAwesome5 name="address-card" size={24} color="black" />
                                 </View>
                                 <View style={ContainerCheck.containerPgOptions}>
+                                    <View style={ContainerCheck.containerPgOptionsCity}>
+                                        <Text style={ContainerCheck.containerPgOptionsTextCity}>Santo Antônio da Platina</Text>
+                                        <FontAwesome5 name="city" size={22} color="black" />
+                                    </View>
                                     <View>
                                         <Text style={ContainerCheck.containerPgOptionsText}>Rua : 24 de maio</Text>
                                     </View>
@@ -113,7 +120,13 @@ export default function Check(){
                     )}
                 </View>
             </View>
-            <View style={ContainerCheck.containerButton}>
+            <View style={{
+                textAlign:'center',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor:'#FFDEAD',
+                marginTop:marginTop
+            }}>
                 <RectButton style={ContainerCheck.buttonPag}>
                     <Text style={ContainerCheck.buttonPagText}> Pagar </Text>
                     <MaterialIcons name="payment" size={30} color="white" />

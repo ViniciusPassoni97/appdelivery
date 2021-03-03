@@ -47,7 +47,7 @@ export const ContainerCheck = StyleSheet.create({
         display:'flex',
         flexDirection:'row',
         justifyContent: 'space-between',
-        marginTop:20,
+        marginTop:20
     },
     containerMap:{
         width: '100%',
@@ -72,7 +72,7 @@ export const ContainerCheck = StyleSheet.create({
     },
     containerPgModelSelected:{
         height: 80, 
-        width: 200, 
+        width: 200 
     },
     buttonPag:{
         flexDirection:'row',
@@ -89,7 +89,7 @@ export const ContainerCheck = StyleSheet.create({
     containerButton:{
         textAlign:'center',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
     },
     buttonPagText:{
         fontWeight:'bold',
@@ -104,5 +104,14 @@ export const ContainerCheck = StyleSheet.create({
         display: 'flex',
         textAlign:'center',
         alignItems:'center'
+    },
+    containerPgOptionsTextCity:{
+        fontSize:14,
+        marginTop:15
+    },
+    containerPgOptionsCity:{
+       flexDirection:'row',
+       textAlign:'center',
+       alignItems:'center' 
     }
 })
