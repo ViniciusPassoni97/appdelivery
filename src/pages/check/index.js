@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
-import {View,Text,ScrollView,Picker} from 'react-native';
+import { View, Text, ScrollView, Picker} from 'react-native';
 import { Ionicons } from '@expo/vector-icons'; 
-import {ContainerCheck} from './style';
-import {RectButton} from 'react-native-gesture-handler';
+import { ContainerCheck } from './style';
+import { RectButton } from 'react-native-gesture-handler';
 import { EvilIcons,FontAwesome5,MaterialCommunityIcons,MaterialIcons } from '@expo/vector-icons'; 
 import MapView from 'react-native-maps';
 import { useNavigation } from '@react-navigation/native';
@@ -98,13 +98,13 @@ export default function Check(){
                                 </View>
                                 <View style={ContainerCheck.containerPgOptions}>
                                     <View>
-                                        <Text>Rua : 24 de maio</Text>
+                                        <Text style={ContainerCheck.containerPgOptionsText}>Rua : 24 de maio</Text>
                                     </View>
                                     <View>
-                                        <Text>Bairro : Centro</Text>
+                                        <Text style={ContainerCheck.containerPgOptionsText}>Bairro : Centro</Text>
                                     </View>
                                     <View>
-                                        <Text>Número : 501</Text>
+                                        <Text style={ContainerCheck.containerPgOptionsText}>Número : 501</Text>
                                     </View>
                                 </View>
                             </View>

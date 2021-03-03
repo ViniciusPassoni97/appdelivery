@@ -39,7 +39,9 @@ export const ContainerCheck = StyleSheet.create({
         fontSize:16
     },
     containerPg:{
-        padding:15
+        paddingTop:15,
+        paddingLeft:15,
+        paddingRight:15
     },
     containerPgText:{
         display:'flex',
@@ -94,4 +96,13 @@ export const ContainerCheck = StyleSheet.create({
         color:'#ffffff',
         fontSize:17
     },
+    containerPgOptionsText:{
+        fontSize:18,
+        marginTop:15
+    },
+    containerPgOptions:{
+        display: 'flex',
+        textAlign:'center',
+        alignItems:'center'
+    }
 })
