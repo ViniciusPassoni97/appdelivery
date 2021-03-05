@@ -19,7 +19,8 @@ export default function Check(){
             setMarginTop(10)
         }else if(selectedValue==='buscar'){
             setWidthSelect(250);
-            setMarginTop(-55);
+            const margin = (marginTop+150);
+            setMarginTop(-150);
         }
         console.log(widthSelect)
         console.log(selectedValue);
@@ -102,7 +103,7 @@ export default function Check(){
                                 <View style={ContainerCheck.containerPgOptions}>
                                     <View style={ContainerCheck.containerPgOptionsCity}>
                                         <Text style={ContainerCheck.containerPgOptionsTextCity}>Santo Antônio da Platina</Text>
-                                        <FontAwesome5 name="city" size={22} color="black" />
+                                        <FontAwesome5 style={{ marginTop:5,marginLeft:5 }} name="city" size={22} color="black" />
                                     </View>
                                     <View>
                                         <Text style={ContainerCheck.containerPgOptionsText}>Rua : 24 de maio</Text>
@@ -124,9 +125,19 @@ export default function Check(){
                 textAlign:'center',
                 alignItems: 'center',
                 justifyContent: 'center',
-                backgroundColor:'#FFDEAD',
+                flexDirection: 'row',
                 marginTop:marginTop
-            }}>
+            }}> 
+                <RectButton style={ContainerCheck.buttonPagVl}>
+                    <Text style={ContainerCheck.buttonPagValor}> Valor :</Text>
+                    <View style={ContainerCheck.buttonPagValorContainer}>
+                        <Text style={ContainerCheck.buttonPagValorContainerText}>R$ </Text>
+                        <Text style={ContainerCheck.buttonPagValorContainerText}>58,00 </Text>
+                    </View>
+                    <View>
+                        <FontAwesome5 style={{marginTop:6}} name="money-check-alt" size={24} color="white" />
+                    </View>
+                </RectButton>
                 <RectButton style={ContainerCheck.buttonPag}>
                     <Text style={ContainerCheck.buttonPagText}> Pagar </Text>
                     <MaterialIcons name="payment" size={30} color="white" />

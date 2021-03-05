@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 export const ContainerCheck = StyleSheet.create({
     container:{
         flex: 1,
-        marginTop:'8%',
+        marginTop:'2%',
         width:'100%',
         height:'100%',
         flexDirection: 'column'
@@ -77,14 +77,15 @@ export const ContainerCheck = StyleSheet.create({
     buttonPag:{
         flexDirection:'row',
         width:'40%',
-        height:50,
+        height:130,
         textAlign:'center',
         alignItems: 'center',
         marginTop:15,
         justifyContent: 'center',
         marginBottom:30,
-        backgroundColor:'#ff0000',
-        borderRadius:15
+        backgroundColor:'#29D23C',
+        borderRadius:15,
+        marginLeft:15
     },
     containerButton:{
         textAlign:'center',
@@ -112,6 +113,34 @@ export const ContainerCheck = StyleSheet.create({
     containerPgOptionsCity:{
        flexDirection:'row',
        textAlign:'center',
-       alignItems:'center' 
+       alignItems:'center',
+       justifyContent: 'center' 
+    },
+    buttonPagValor:{
+        fontWeight:'bold',
+        color:'#ffffff',
+        fontSize:18
+    },
+    buttonPagVl:{
+        width:'40%',
+        height:130,
+        textAlign:'center',
+        alignItems: 'center',
+        marginTop:15,
+        justifyContent: 'center',
+        marginBottom:30,
+        backgroundColor:'#7B68EE',
+        borderRadius:15,
+        marginLeft:15
+    },
+    buttonPagValorContainer:{
+        flexDirection:'row',
+        marginTop:5,
+        color: '#ffffff'
+    },
+    buttonPagValorContainerText:{
+        fontWeight:'bold',
+        color:'#ffffff',
+        fontSize:20
     }
 })
