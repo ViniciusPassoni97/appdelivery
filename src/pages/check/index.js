@@ -1,9 +1,8 @@
 import React,{useState} from 'react';
 import { View, Text, ScrollView, Picker} from 'react-native';
-import { Ionicons } from '@expo/vector-icons'; 
 import { ContainerCheck } from './style';
 import { RectButton } from 'react-native-gesture-handler';
-import { EvilIcons,FontAwesome5,MaterialCommunityIcons,MaterialIcons } from '@expo/vector-icons'; 
+import { EvilIcons,FontAwesome5,MaterialCommunityIcons,MaterialIcons,Ionicons,AntDesign } from '@expo/vector-icons'; 
 import MapView from 'react-native-maps';
 import { useNavigation } from '@react-navigation/native';
 import { useEffect } from 'react';
@@ -140,7 +139,7 @@ export default function Check(){
                 </RectButton>
                 <RectButton style={ContainerCheck.buttonPag}>
                     <Text style={ContainerCheck.buttonPagText}> Pagar </Text>
-                    <MaterialIcons name="payment" size={30} color="white" />
+                    <AntDesign style={{marginTop:10}} name="shoppingcart" size={35} color="white" />
                 </RectButton>
             </View>
         </ScrollView>

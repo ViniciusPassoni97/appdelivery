@@ -75,7 +75,6 @@ export const ContainerCheck = StyleSheet.create({
         width: 200 
     },
     buttonPag:{
-        flexDirection:'row',
         width:'40%',
         height:130,
         textAlign:'center',
@@ -95,7 +94,7 @@ export const ContainerCheck = StyleSheet.create({
     buttonPagText:{
         fontWeight:'bold',
         color:'#ffffff',
-        fontSize:17
+        fontSize:23
     },
     containerPgOptionsText:{
         fontSize:18,
