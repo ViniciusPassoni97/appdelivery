@@ -10,7 +10,7 @@ export const StyleCategories = StyleSheet.create({
         shadowRadius: 3.84,
         elevation: 1,
         padding:20,
-        height:'25%',
+        height:'15%',
     },
     containerItensHeaderImg:{
         width:40,
@@ -32,6 +32,6 @@ export const StyleCategories = StyleSheet.create({
         padding:15
     },
     containerItensScrow: {
-        height:'60%',
+        height:'85%',
     }
 });

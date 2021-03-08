@@ -19,9 +19,6 @@ export default function Item(){
                     <Image source={Vector} style={StyleCategories.containerItensHeaderImg}/>
                 </RectButton>
                 <Text style={StyleCategories.containerItensHeaderText} >Vegetables</Text>
-                <TextInput
-                    style={StyleCategories.containerItemHeaderInput}
-                />
            </View>
            <View style={StyleCategories.containerItensScrow}>
                 <ScrollView style={{ flex:1 }}>
