@@ -20,21 +20,20 @@ export default function Splash() {
         <View style={ContainerSplash.footer}>
             <Image style={ContainerSplash.containerImgLogo} source={IconSplash} />
             <View style={ContainerSplash.containerTextTitle} > 
-              <Text style={ContainerSplash.textInfo}>Non-Contact</Text>
-              <Text style={ContainerSplash.textInfo}>Deliveries</Text>
+              <Text style={ContainerSplash.textInfo}>App Delivery</Text>
+              <Text style={ContainerSplash.textInfo}>Seja bem vindo !</Text>
             </View>
             <View style={ContainerSplash.containerTextInfo}>
               <Text style={ContainerSplash.containerTextInfoText}>
-              When placing an order, 
-              select the option "Contactless delivery" 
-              and the courier will leave your order at the door.</Text>
+              Faça pedidos sem sair de casa, escolha a melhor
+              forma de entrega e de pagamento</Text>
             </View>
             <View style={ContainerSplash.containerButton}>
                 <RectButton style={ContainerSplash.containerButtonViewBtn} onPress={HandleCategories}>
-                  <Text title='Click' style={ContainerSplash.containerButtonBtn}>order now</Text>
+                  <Text title='Click' style={ContainerSplash.containerButtonBtn}>Entrar</Text>
                 </RectButton>
                 <RectButton style={ContainerSplash.containerButtonDismiss}>
-                  <Text title='Dismiss' style={ContainerSplash.containerButtonBtnDismiss}>dismiss</Text>
+                  <Text title='Dismiss' style={ContainerSplash.containerButtonBtnDismiss}>Sair</Text>
                 </RectButton>
             </View>
         </View>
