@@ -13,8 +13,15 @@ import SpaghettiIcon from '../../../assets/spaghetti.png';
 import CoffeIcon from '../../../assets/coffe.png';
 import api from '../../api/index';
 
+
 export default function Categories(){
-    const [categories, setCategories]= useState(null);
+    const [categories, setCategories]= useState([
+        {
+          description:'',
+          image:'',
+          id:0
+        }
+      ]);
 
     const navigation = useNavigation();
 
@@ -43,6 +50,18 @@ export default function Categories(){
            </View>
            <View style={StyleCategories.containerCategoriesCard}>
                <ScrollView style={{ flex: 1 }}>
+                    {categories.map((categoria)=>{
+                        console.log(categoria.image,categoria.description,categoria.id)
+                       return (
+                            <View style={StyleCategories.containerCategoriesScrow}>
+                                <TouchableNativeFeedback onPress={HandleIten}> 
+                                    <RectButton>
+                                        <CardCategories urlImage={categoria.image} title={categoria.description} number='12'/>
+                                    </RectButton>
+                                </TouchableNativeFeedback>
+                            </View>
+                        );
+                    })}
                    <View style={StyleCategories.containerCategoriesScrow}>
                        <TouchableNativeFeedback onPress={HandleIten}> 
                             <RectButton>
