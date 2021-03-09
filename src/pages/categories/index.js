@@ -1,5 +1,5 @@
-import React from 'react';
-import { Text, View,Image,TextInput,ScrollView,TouchableNativeFeedback } from 'react-native';
+import React,{useEffect,useState} from 'react';
+import { Text, View,Image,ScrollView,TouchableNativeFeedback } from 'react-native';
 import CardCategories from '../../components/cardCategories/index';
 import {StyleCategories} from './style';
 import Vector from '../../../assets/vector.png';
@@ -11,8 +11,11 @@ import BreadIcon from '../../../assets/bread.png';
 import SweetsIcon from '../../../assets/sweets.png';
 import SpaghettiIcon from '../../../assets/spaghetti.png';
 import CoffeIcon from '../../../assets/coffe.png';
+import api from '../../api/index';
 
 export default function Categories(){
+    const [categories, setCategories]= useState(null);
+
     const navigation = useNavigation();
 
     function HandleSlash() {
@@ -22,6 +25,13 @@ export default function Categories(){
     function HandleIten() {
         navigation.navigate('Item'); 
     }
+
+    useEffect(()=>{
+        api.get('categories').then(response=>{
+            console.log(response.data);
+            setCategories(response.data);
+        }).catch(error => console.log(error));
+    },[]);
 
     return (
        <View style={StyleCategories.containerCategories}>
