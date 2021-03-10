@@ -40,5 +40,6 @@ export const StyleCategories = StyleSheet.create({
     containerCategoriesScrow:{
         display: 'flex',
         flexDirection: 'row',
+        alignItems: 'center'
     }
 });
