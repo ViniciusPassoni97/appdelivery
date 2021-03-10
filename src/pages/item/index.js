@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,Text,Image,TextInput,ScrollView} from 'react-native';
+import {View,Text,Image,ScrollView} from 'react-native';
 import { StyleCategories } from './style';
 import {RectButton} from 'react-native-gesture-handler';
 import Vector from '../../../assets/vector.png';
@@ -22,18 +22,6 @@ export default function Item(){
            </View>
            <View style={StyleCategories.containerItensScrow}>
                 <ScrollView style={{ flex:1 }}>
-                    <View style=''>
-                        <ItemCard title='Boston Lettuce' unidade='KG' valour={'0.2'}/>
-                    </View>
-                    <View style=''>
-                        <ItemCard title='Boston Lettuce' unidade='UN' valour={'2.5'}/>
-                    </View>
-                    <View style=''>
-                        <ItemCard title='Boston Lettuce' unidade='KG' valour={'3.2'}/>
-                    </View>
-                    <View style=''>
-                        <ItemCard title='Boston Lettuce' unidade='UN' valour={'4.1'}/>
-                    </View>
                     <View style=''>
                         <ItemCard title='Boston Lettuce' unidade='KG' valour={'5.2'}/>
                     </View>

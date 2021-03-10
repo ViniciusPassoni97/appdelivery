@@ -25,8 +25,8 @@ export default function Categories(){
         navigation.navigate('Splash');  
     }
 
-    function HandleIten() {
-        navigation.navigate('Item'); 
+    function HandleIten({id:number}) {
+        navigation.navigate('Item',{category_id:id}); 
     }
 
     async function itemCategories(id){
@@ -52,7 +52,7 @@ export default function Categories(){
                     {categories.map((categoria)=>{
                         return (
                             <View style={StyleCategories.containerCategoriesScrow}>
-                                <TouchableNativeFeedback onPress={HandleIten}> 
+                                <TouchableNativeFeedback onPress={()=>HandleIten(categoria.id)}> 
                                     <RectButton>
                                         <CardCategories urlImage={categoria.image} title={categoria.description} number='12'/>
                                     </RectButton>
