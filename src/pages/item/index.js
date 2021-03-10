@@ -44,7 +44,7 @@ export default function Item(){
                     {item.map((item) =>{
                         return(
                             <View style=''>
-                                <ItemCard title={item.description} unidade='KG' valour={item.value}/>
+                                <ItemCard key={item.id} title={item.description} unidade='KG' valour={item.value}/>
                             </View>
                         );
                     })}

@@ -48,7 +48,7 @@ export default function Categories(){
                             <View style={StyleCategories.containerCategoriesScrow}>
                                 <TouchableNativeFeedback onPress={()=>HandleIten(categoria.id)}> 
                                     <RectButton>
-                                        <CardCategories urlImage={categoria.image} title={categoria.description} number='12'/>
+                                        <CardCategories key={categoria.id} urlImage={categoria.image} title={categoria.description} number='12'/>
                                     </RectButton>
                                 </TouchableNativeFeedback>
                             </View>
