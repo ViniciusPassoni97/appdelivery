@@ -8,7 +8,15 @@ import { useNavigation,useRoute } from '@react-navigation/native';
 import api from '../../api/index';
 
 export default function Item(){
-    const [item,setItem] = useState('');
+    const [item,setItem] = useState([
+        {
+          description:'',
+          image:'',
+          id:0,
+          value: 0,
+          category_id: 0
+        }
+    ]);
     const navigation = useNavigation();
     const route = useRoute();
     const routeParams = route.params.id;
@@ -18,7 +26,7 @@ export default function Item(){
             setItem(response.data);
             console.log(item);
         }).catch(error => console.log(error));
-    },[setItem]);
+    },[]);
 
     function handelButtonExit(){
         navigation.navigate('Categories');  
@@ -33,9 +41,13 @@ export default function Item(){
            </View>
            <View style={StyleCategories.containerItensScrow}>
                 <ScrollView style={{ flex:1 }}>
-                    <View style=''>
-                        <ItemCard title='Boston Lettuce' unidade='KG' valour={'5.2'}/>
-                    </View>
+                    {item.map((item) =>{
+                        return(
+                            <View style=''>
+                                <ItemCard title={item.description} unidade='KG' valour={item.value}/>
+                            </View>
+                        );
+                    })}
                 </ScrollView>
            </View>
         </View>
