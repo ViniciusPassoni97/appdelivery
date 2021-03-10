@@ -29,10 +29,6 @@ export default function Categories(){
         navigation.navigate('Item',{category_id:id}); 
     }
 
-    async function itemCategories(id){
-        
-    }
-
     useEffect(()=>{
         api.get('categories').then(response=>{
             setCategories(response.data);
