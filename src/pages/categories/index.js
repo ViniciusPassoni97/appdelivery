@@ -17,16 +17,14 @@ export default function Categories(){
         }
     ]);
 
-    const [idListCategory,setIdListCategory] = useState(0);
-
     const navigation = useNavigation();
 
     function HandleSlash() {
         navigation.navigate('Splash');  
     }
 
-    function HandleIten({id:number}) {
-        navigation.navigate('Item',{category_id:id}); 
+    function HandleIten(id) {
+        navigation.navigate('Item',{id}); 
     }
 
     useEffect(()=>{
