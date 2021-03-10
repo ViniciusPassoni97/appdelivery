@@ -21,7 +21,9 @@ export default function Categories(){
           image:'',
           id:0
         }
-      ]);
+    ]);
+
+    const [idCategory,setIdCategory] = useState(0);
 
     const navigation = useNavigation();
 
@@ -35,7 +37,6 @@ export default function Categories(){
 
     useEffect(()=>{
         api.get('categories').then(response=>{
-            console.log(response.data);
             setCategories(response.data);
         }).catch(error => console.log(error));
     },[]);
@@ -51,8 +52,7 @@ export default function Categories(){
            <View style={StyleCategories.containerCategoriesCard}>
                <ScrollView style={{ flex: 1 }}>
                     {categories.map((categoria)=>{
-                        console.log(categoria.image,categoria.description,categoria.id)
-                       return (
+                            return (
                             <View style={StyleCategories.containerCategoriesScrow}>
                                 <TouchableNativeFeedback onPress={HandleIten}> 
                                     <RectButton>
@@ -62,42 +62,6 @@ export default function Categories(){
                             </View>
                         );
                     })}
-                   <View style={StyleCategories.containerCategoriesScrow}>
-                       <TouchableNativeFeedback onPress={HandleIten}> 
-                            <RectButton>
-                                <CardCategories urlImage={VegetablesIcon} title='Vegetables' number='12'/>
-                            </RectButton>
-                       </TouchableNativeFeedback>
-                       <TouchableNativeFeedback onPress={HandleIten}>
-                            <RectButton>
-                                <CardCategories urlImage={FruitsIcon} title='Fruits' number='39'/>
-                            </RectButton>
-                       </TouchableNativeFeedback>
-                   </View>
-                   <View style={StyleCategories.containerCategoriesScrow}>
-                        <TouchableNativeFeedback onPress={HandleIten}>
-                            <RectButton>
-                                <CardCategories urlImage={BreadIcon} title='Bread' number='9'/>
-                            </RectButton>
-                        </TouchableNativeFeedback>
-                        <TouchableNativeFeedback onPress={HandleIten}>
-                            <RectButton>
-                                <CardCategories urlImage={SweetsIcon} title='Sweets' number='21'/>
-                            </RectButton>
-                        </TouchableNativeFeedback>
-                   </View>
-                   <View style={StyleCategories.containerCategoriesScrow}>
-                        <TouchableNativeFeedback onPress={HandleIten}>
-                            <RectButton>
-                                <CardCategories urlImage={SpaghettiIcon} title='Spaghetti' number='7'/>
-                            </RectButton>
-                        </TouchableNativeFeedback>
-                        <TouchableNativeFeedback onPress={HandleIten}>
-                            <RectButton>
-                                <CardCategories urlImage={CoffeIcon} title='Coffe' number='16'/>
-                            </RectButton>
-                        </TouchableNativeFeedback>
-                   </View>
                </ScrollView>
             </View>
        </View>

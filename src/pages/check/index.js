@@ -21,8 +21,6 @@ export default function Check(){
             const margin = (marginTop+150);
             setMarginTop(-150);
         }
-        console.log(widthSelect)
-        console.log(selectedValue);
     },[selectedValue]);
 
     const navigation = useNavigation();

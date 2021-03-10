@@ -8,7 +8,7 @@ export default function CardCategories(props) {
         <View style={StyleCardCategory.containerCategory}>
             <RectButton>
                 <View style={StyleCardCategory.containerCategoryImage}>
-                    <Image style={StyleCardCategory.categoryImage} source={props.urlImage}/>
+                    <Image style={StyleCardCategory.categoryImage} source={{uri:props.urlImage}}/>
                 </View>
                 <View style={StyleCardCategory.containerCategoryText}>
                     <Text style={StyleCardCategory.categoryText}>{props.title}</Text>

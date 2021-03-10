@@ -8,7 +8,8 @@ export const StyleCardCategory =StyleSheet.create({
         
     },
     categoryImage:{
-
+        width: 160,
+        height: 160,
     },
     containerCategoryText:{
         marginTop:10,
