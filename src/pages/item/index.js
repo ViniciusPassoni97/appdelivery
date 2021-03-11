@@ -24,13 +24,13 @@ export default function Item(){
     useEffect(()=>{
         api.get(`categories/item/${routeParams}`).then(response=>{
             setItem(response.data);
-            console.log(item);
         }).catch(error => console.log(error));
     },[]);
 
     function handelButtonExit(){
         navigation.navigate('Categories');  
     }
+
     return(
         <View style={StyleCategories.container}>
             <View style={StyleCategories.containerItensHeader}>
@@ -44,7 +44,7 @@ export default function Item(){
                     {item.map((item) =>{
                         return(
                             <View style=''>
-                                <ItemCard key={item.id} title={item.description} unidade='KG' valour={item.value}/>
+                                <ItemCard id={item.id} category_id={item.category_id} key={item.id} title={item.description} unidade='KG' valour={item.value}/>
                             </View>
                         );
                     })}
