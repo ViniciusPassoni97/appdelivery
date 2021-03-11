@@ -20,7 +20,8 @@ export const containerCardItem = StyleSheet.create({
     },
     containerItemButtonShopping:{
         padding:13,
-        width:'40%',
+        marginLeft:10,
+        width:'35%',
         backgroundColor:'#0BCE83',
         borderRadius:13,
         display: 'flex',

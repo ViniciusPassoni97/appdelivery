@@ -10,14 +10,14 @@ export const StyleCategories = StyleSheet.create({
         shadowRadius: 3.84,
         elevation: 1,
         padding:20,
-        height:'15%',
+        
     },
     containerItensHeaderImg:{
         width:40,
         height:40
     },
     containerItensHeaderText:{
-        marginTop:20,
+        marginTop:5,
         fontSize:30,
         fontWeight: 'bold',
         textAlign: 'center'
