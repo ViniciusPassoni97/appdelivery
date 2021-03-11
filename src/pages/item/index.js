@@ -34,9 +34,10 @@ export default function Item(){
         }).catch(error => console.log(error));
         api.get(`categories/${routeParams}`).then(response=>{
             setCategories(response.data);
-            console.log(categories);
         }).catch(error => console.log(error));
     },[]);
+
+    const [description] = categories;
 
     function handelButtonExit(){
         navigation.navigate('Categories');  
@@ -48,7 +49,7 @@ export default function Item(){
                 <RectButton onPress={handelButtonExit}>
                     <Image source={Vector} style={StyleCategories.containerItensHeaderImg}/>
                 </RectButton>
-                <Text style={StyleCategories.containerItensHeaderText} >Vegetables</Text>
+                <Text style={StyleCategories.containerItensHeaderText}>{description.description}</Text>
            </View>
            <View style={StyleCategories.containerItensScrow}>
                 <ScrollView style={{ flex:1 }}>
