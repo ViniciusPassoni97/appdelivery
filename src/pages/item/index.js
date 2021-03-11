@@ -17,6 +17,13 @@ export default function Item(){
           category_id: 0
         }
     ]);
+    const [categories,setCategories] = useState([
+        {
+          description:'',
+          image:'https://assets.afcdn.com/story/20150423/648452_w980h638c1cx510cy248.jpg',
+          id:0,
+        }
+    ]);
     const navigation = useNavigation();
     const route = useRoute();
     const routeParams = route.params.id;
@@ -24,6 +31,10 @@ export default function Item(){
     useEffect(()=>{
         api.get(`categories/item/${routeParams}`).then(response=>{
             setItem(response.data);
+        }).catch(error => console.log(error));
+        api.get(`categories/${routeParams}`).then(response=>{
+            setCategories(response.data);
+            console.log(categories);
         }).catch(error => console.log(error));
     },[]);
 
