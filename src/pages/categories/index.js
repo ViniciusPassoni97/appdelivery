@@ -12,7 +12,7 @@ export default function Categories(){
     const [categories, setCategories]= useState([
         {
           description:'',
-          image:'',
+          image:'https://th.bing.com/th/id/OIP.IUHhrZatqdgEqxT5lsaSIAHaFD?w=230&h=180&c=7&o=5&dpr=1.5&pid=1.7',
           id:0
         }
     ]);
@@ -43,17 +43,17 @@ export default function Categories(){
            </View>
            <View style={StyleCategories.containerCategoriesCard}>
                <ScrollView style={{ flex: 1 }}>
+               <View style={StyleCategories.containerCategoriesScrow}>
                     {categories.map((categoria)=>{
                         return (
-                            <View style={StyleCategories.containerCategoriesScrow}>
-                                <TouchableNativeFeedback onPress={()=>HandleIten(categoria.id)}> 
-                                    <RectButton>
-                                        <CardCategories key={categoria.id} urlImage={categoria.image} title={categoria.description} number='12'/>
-                                    </RectButton>
-                                </TouchableNativeFeedback>
-                            </View>
+                            <TouchableNativeFeedback onPress={()=>HandleIten(categoria.id)}> 
+                                <RectButton>
+                                    <CardCategories key={categoria.id} urlImage={categoria.image} title={categoria.description} number='12'/>
+                                </RectButton>
+                            </TouchableNativeFeedback>
                         );
                     })}
+                 </View>
                </ScrollView>
             </View>
        </View>

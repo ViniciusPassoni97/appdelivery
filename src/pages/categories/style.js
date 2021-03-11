@@ -32,14 +32,12 @@ export const StyleCategories = StyleSheet.create({
         padding:15
     },
     containerCategoriesCard: {
-        display: 'flex',
-        flexDirection: 'row',
         padding:20,
         height:'87%',
     },
     containerCategoriesScrow:{
-        display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center'
+        flexWrap: 'wrap',
+        alignItems: 'flex-start'
     }
 });
