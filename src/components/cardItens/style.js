@@ -40,5 +40,9 @@ export const containerCardItem = StyleSheet.create({
     containerItemInfoTitle:{
         fontWeight:'bold',
         fontSize:18
+    },
+    categoryImage:{
+        width: 160,
+        height: 160,
     }
 });

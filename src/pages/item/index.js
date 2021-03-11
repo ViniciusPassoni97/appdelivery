@@ -11,7 +11,7 @@ export default function Item(){
     const [item,setItem] = useState([
         {
           description:'',
-          image:'',
+          image:'https://assets.afcdn.com/story/20150423/648452_w980h638c1cx510cy248.jpg',
           id:0,
           value: 0,
           category_id: 0
@@ -44,7 +44,7 @@ export default function Item(){
                     {item.map((item) =>{
                         return(
                             <View style=''>
-                                <ItemCard id={item.id} category_id={item.category_id} key={item.id} title={item.description} unidade='KG' valour={item.value}/>
+                                <ItemCard id={item.id} category_id={item.category_id} title={item.description} unidade='KG' valour={item.value} imagem={item.image}/>
                             </View>
                         );
                     })}

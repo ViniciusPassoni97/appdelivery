@@ -1,18 +1,17 @@
 import React from 'react';
 import {View,Text,Image} from 'react-native';
-import Boston from '../../../assets/boston.png';
 import ShoppingItem from '../../../assets/shopping-item.png';
 import {containerCardItem} from './style';
 import {RectButton} from 'react-native-gesture-handler';
 
 export default function cardItens(props) {
     function addItemShoppingCar(id,description,image,value,category_id) {
-        console.log('Quero comprar esse item : ',id,description,image,value,category_id)
+        //console.log('Quero comprar esse item : ',id,description,image,value,category_id)
     }
     return(
-        <View key={props.id} style={containerCardItem.containerItem}>
+        <View style={containerCardItem.containerItem}>
             <View>
-                <Image source={Boston} />
+                <Image style={containerCardItem.categoryImage} source={{uri:props.imagem}}/>
             </View>
             <View style={containerCardItem.containerItemInfo}>
                 <Text style={containerCardItem.containerItemInfoTitle}>{props.title}</Text>
