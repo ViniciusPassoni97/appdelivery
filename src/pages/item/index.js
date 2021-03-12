@@ -21,7 +21,7 @@ export default function Item(){
         {
           description:'',
           image:'https://assets.afcdn.com/story/20150423/648452_w980h638c1cx510cy248.jpg',
-          id:0,
+          id:1,
         }
     ]);
     const navigation = useNavigation();
