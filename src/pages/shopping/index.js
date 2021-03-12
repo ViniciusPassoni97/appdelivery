@@ -8,6 +8,11 @@ import ShoppingCardItem from '../../components/cardShopping/index';
 import { ChallengeContext } from '../../contexts/shopping';
 
 export default function Shopping() {
+    const { itemShopping } = useContext(ChallengeContext);
+    useEffect(()=>{
+        console.log(itemShopping);
+    },[itemShopping]);
+    
     const navigation = useNavigation();
 
     function HandleCategories() {

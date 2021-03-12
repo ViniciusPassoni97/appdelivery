@@ -23,7 +23,6 @@ export default function cardItens(props) {
                 image:props.imagem
             }
             setShoppingItem(item);
-            console.log(itemShopping);
             alert('Item adicionado ao carrinho com suceso !');
         } catch (error) {
             alert('Falha ao adicionar o Item'+error);
