@@ -5,20 +5,17 @@ export const ChallengeContext = createContext({});
 
 export const ChallengesProvieder = props => {
     const [itemShopping,setShoppingItem] = useState([{
-            description:String,
-            value:Number,
-            quantidade:Number,
-            valueTotal:Number,
-            id:Number,
-            category_id:Number,
-            image:String,
     }]);
 
+    function addItemShopping(shoppingItem){
+        setShoppingItem([...itemShopping,shoppingItem]);
+    }
 
     return(
     <ChallengeContext.Provider value={{
         itemShopping,
-        setShoppingItem
+        setShoppingItem,
+        addItemShopping
     }}>
         {props.children}
     </ChallengeContext.Provider>

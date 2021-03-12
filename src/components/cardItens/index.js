@@ -8,12 +8,13 @@ import { ChallengeContext } from '../../contexts/shopping';
 export default function cardItens(props) {
     const {        
         itemShopping,
-        setShoppingItem
+        setShoppingItem,
+        addItemShopping
     } = useContext(ChallengeContext);
 
     function addItemShoppingCar() {
         try {
-            const item = {
+            addItemShopping({
                 description:props.title,
                 value:props.valour,
                 quantidade:quantidade,
@@ -21,8 +22,7 @@ export default function cardItens(props) {
                 id:props.id,
                 category_id:props.category_id,
                 image:props.imagem
-            }
-            setShoppingItem(item);
+            });
             alert('Item adicionado ao carrinho com suceso !');
         } catch (error) {
             alert('Falha ao adicionar o Item'+error);
