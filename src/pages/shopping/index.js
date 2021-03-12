@@ -1,10 +1,12 @@
-import React from 'react';
+import React,{useContext,useEffect} from 'react';
 import {View,Text,ScrollView} from 'react-native';
 import {ContainerShopping} from './style';
 import {RectButton} from 'react-native-gesture-handler';
 import { Ionicons,FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import ShoppingCardItem from '../../components/cardShopping/index';
+import { ChallengeContext } from '../../contexts/shopping';
+
 export default function Shopping() {
     const navigation = useNavigation();
 
@@ -32,9 +34,6 @@ export default function Shopping() {
                 </View>
             </View>
             <ScrollView style={ContainerShopping.containerItens}>
-                <ShoppingCardItem />
-                <ShoppingCardItem />
-                <ShoppingCardItem />
                 <ShoppingCardItem />
             </ScrollView>
         </View>
