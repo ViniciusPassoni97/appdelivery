@@ -6,7 +6,10 @@ import {RectButton} from 'react-native-gesture-handler';
 import { ChallengeContext } from '../../contexts/shopping';
 
 export default function cardItens(props) {
-    const ctx = useContext(ChallengeContext);
+    const {        
+        itemShopping,
+        setShoppingItem
+    } = useContext(ChallengeContext);
 
     function addItemShoppingCar() {
         try {
@@ -18,11 +21,11 @@ export default function cardItens(props) {
                 id:props.id,
                 category_id:props.category_id,
             }
-    
-            console.log(item);
+            setShoppingItem(item);
+            console.log(itemShopping);
             alert('Item adicionado ao carrinho com suceso !');
         } catch (error) {
-            alert('Falha ao adicionar o Item');
+            alert('Falha ao adicionar o Item'+error);
         }
     }
 

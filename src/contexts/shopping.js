@@ -22,7 +22,7 @@ export const ChallengesProvieder = props => {
     return(
     <ChallengeContext.Provider value={{
         itemShopping,
-        addShoppingItem
+        setShoppingItem
     }}>
         {props.children}
     </ChallengeContext.Provider>
