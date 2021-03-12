@@ -1,12 +1,29 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState,useContext} from 'react';
 import {View,Text,Image,TextInput} from 'react-native';
 import ShoppingItem from '../../../assets/shopping-item.png';
 import {containerCardItem} from './style';
 import {RectButton} from 'react-native-gesture-handler';
+import { ChallengeContext } from '../../contexts/shopping';
 
 export default function cardItens(props) {
+    const ctx = useContext(ChallengeContext);
+
     function addItemShoppingCar() {
-        alert('Item adicionado ao carrinho com suceso !');
+        try {
+            const item = {
+                description:props.title,
+                value:props.valour,
+                quantidade:quantidade,
+                valueTotal:quantidade*props.valour,
+                id:props.id,
+                category_id:props.category_id,
+            }
+    
+            console.log(item);
+            alert('Item adicionado ao carrinho com suceso !');
+        } catch (error) {
+            alert('Falha ao adicionar o Item');
+        }
     }
 
     const [quantidade,setQuantidade] = useState();

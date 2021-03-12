@@ -2,15 +2,15 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import RouteIndex from './src/routes/index';
-import {ChallengeContext} from './src/contexts/shopping';
+import {ChallengesProvieder} from './src/contexts/shopping';
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <ChallengeContext.Provider value={'teste'}>
+    <ChallengesProvieder>
+      <NavigationContainer>
         <RouteIndex />
-      </ChallengeContext.Provider>
-    </NavigationContainer>
+      </NavigationContainer>
+    </ChallengesProvieder>
   );
 }
 
