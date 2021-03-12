@@ -12,6 +12,7 @@ export const ChallengesProvieder = props => {
             valueTotal:0,
             id:0,
             category_id:0,
+            image:'https://th.bing.com/th/id/OIP.IUHhrZatqdgEqxT5lsaSIAHaFD?w=230&h=180&c=7&o=5&dpr=1.5&pid=1.7',
         }
     ]);
 

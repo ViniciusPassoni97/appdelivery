@@ -20,6 +20,7 @@ export default function cardItens(props) {
                 valueTotal:quantidade*props.valour,
                 id:props.id,
                 category_id:props.category_id,
+                image:props.imagem
             }
             setShoppingItem(item);
             console.log(itemShopping);
