@@ -4,8 +4,7 @@ export const ChallengeContext = createContext({});
 
 
 export const ChallengesProvieder = props => {
-    const [itemShopping,setShoppingItem] = useState([{
-    }]);
+    const [itemShopping,setShoppingItem] = useState([]);
     
     let sum = 0;
 

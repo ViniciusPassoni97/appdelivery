@@ -5,7 +5,7 @@ import Item from '../../pages/item/index';
 import Splash from '../../pages/splash/index';
 import RoutesButton from '../button/buttonRoute';
 import Check from '../../pages/check/index';
-import Play from '../../pages/pay/index';
+import Pay from '../../pages/pay/index';
 
 const {Navigator,Screen} = createStackNavigator();
 
@@ -16,7 +16,7 @@ export default function routeStack() {
             <Screen name="Item" component={Item}/>
             <Screen name="Categories" component={RoutesButton}/>  
             <Screen name="Check" component={Check}/>
-            <Screen name="Play" component={Play}/>  
+            <Screen name="Play" component={Pay}/>
         </Navigator>
     );
 }

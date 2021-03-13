@@ -2,7 +2,7 @@ import React,{useState,useContext} from 'react';
 import { View, Text, ScrollView, Picker} from 'react-native';
 import { ContainerCheck } from './style';
 import { RectButton } from 'react-native-gesture-handler';
-import { EvilIcons,FontAwesome5,MaterialCommunityIcons,MaterialIcons,Ionicons,AntDesign } from '@expo/vector-icons'; 
+import { EvilIcons,FontAwesome5,MaterialCommunityIcons,Ionicons,AntDesign } from '@expo/vector-icons'; 
 import MapView,{Marker} from 'react-native-maps';
 import { useNavigation } from '@react-navigation/native';
 import { useEffect } from 'react';
@@ -33,8 +33,8 @@ export default function Check(){
         navigation.navigate('Shopping');  
     }
 
-    function HandlePlay(){
-        navigation.navigate('Play')
+    function HandlePlay() {
+        navigation.navigate('Play');
     }
     
     return (
