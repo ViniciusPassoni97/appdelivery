@@ -3,7 +3,7 @@ import { View, Text, ScrollView, Picker} from 'react-native';
 import { ContainerCheck } from './style';
 import { RectButton } from 'react-native-gesture-handler';
 import { EvilIcons,FontAwesome5,MaterialCommunityIcons,MaterialIcons,Ionicons,AntDesign } from '@expo/vector-icons'; 
-import MapView from 'react-native-maps';
+import MapView,{Marker} from 'react-native-maps';
 import { useNavigation } from '@react-navigation/native';
 import { useEffect } from 'react';
 import { ChallengeContext } from '../../contexts/shopping';
@@ -31,6 +31,10 @@ export default function Check(){
 
     function HandleCheck() {
         navigation.navigate('Shopping');  
+    }
+
+    function HandlePlay(){
+        navigation.navigate('Play')
     }
     
     return (
@@ -89,7 +93,14 @@ export default function Check(){
                                     longitude: -50.0701293,
                                     latitudeDelta: 0.01,
                                     longitudeDelta: 0.01,
-                                }}/>
+                                }}>
+                                    <Marker 
+                                        coordinate={{
+                                            latitude: -23.2750897,
+                                            longitude: -50.0701293,
+                                        }}
+                                    />
+                                </MapView>
                             </View>
                         </View>
                       </>
@@ -139,7 +150,7 @@ export default function Check(){
                         <FontAwesome5 style={{marginTop:6}} name="money-check-alt" size={24} color="white" />
                     </View>
                 </RectButton>
-                <RectButton style={ContainerCheck.buttonPag}>
+                <RectButton onPress={HandlePlay} style={ContainerCheck.buttonPag}>
                     <Text style={ContainerCheck.buttonPagText}> Pagar </Text>
                     <AntDesign style={{marginTop:10}} name="shoppingcart" size={35} color="white" />
                 </RectButton>
