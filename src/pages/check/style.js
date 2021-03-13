@@ -140,6 +140,7 @@ export const ContainerCheck = StyleSheet.create({
     buttonPagValorContainerText:{
         fontWeight:'bold',
         color:'#ffffff',
-        fontSize:20
+        fontSize:20,
     }
+
 })

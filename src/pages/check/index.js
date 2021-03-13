@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useContext} from 'react';
 import { View, Text, ScrollView, Picker} from 'react-native';
 import { ContainerCheck } from './style';
 import { RectButton } from 'react-native-gesture-handler';
@@ -6,13 +6,17 @@ import { EvilIcons,FontAwesome5,MaterialCommunityIcons,MaterialIcons,Ionicons,An
 import MapView from 'react-native-maps';
 import { useNavigation } from '@react-navigation/native';
 import { useEffect } from 'react';
+import { ChallengeContext } from '../../contexts/shopping';
 
 export default function Check(){
+    const { sumValourTotal } = useContext(ChallengeContext);
     const [selectedValue, setSelectedValue] = useState("domicilio");
     const [widthSelect, setWidthSelect] = useState(0);
     const [marginTop, setMarginTop] = useState(0);
+    const [valourTotal, setValourTotal] = useState(sumValourTotal);
 
     useEffect(()=>{
+        console.log(sumValourTotal);
         if(selectedValue==='domicilio'){
             setWidthSelect(200);
             setMarginTop(10)
@@ -81,10 +85,10 @@ export default function Check(){
                                 <MapView
                                     style={ContainerCheck.containerHeaderMap}
                                     initialRegion={{
-                                    latitude: 37.78825,
-                                    longitude: -122.4324,
-                                    latitudeDelta: 0.0922,
-                                    longitudeDelta: 0.0421,
+                                    latitude: -23.2750897,
+                                    longitude: -50.0701293,
+                                    latitudeDelta: 0.01,
+                                    longitudeDelta: 0.01,
                                 }}/>
                             </View>
                         </View>
@@ -129,7 +133,7 @@ export default function Check(){
                     <Text style={ContainerCheck.buttonPagValor}> Valor :</Text>
                     <View style={ContainerCheck.buttonPagValorContainer}>
                         <Text style={ContainerCheck.buttonPagValorContainerText}>R$ </Text>
-                        <Text style={ContainerCheck.buttonPagValorContainerText}>58,00 </Text>
+                        <Text style={ContainerCheck.buttonPagValorContainerText}>{valourTotal}</Text>
                     </View>
                     <View>
                         <FontAwesome5 style={{marginTop:6}} name="money-check-alt" size={24} color="white" />
