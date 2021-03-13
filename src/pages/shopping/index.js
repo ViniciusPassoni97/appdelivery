@@ -39,7 +39,17 @@ export default function Shopping() {
                 </View>
             </View>
             <ScrollView style={ContainerShopping.containerItens}>
-                <ShoppingCardItem />
+                {itemShopping.map((response)=>{
+                    return(
+                        <ShoppingCardItem 
+                            imagem={response.image} 
+                            description={response.description}
+                            value={response.value}
+                            quantidade={response.quantidade}
+                            valueTotal={response.valueTotal}
+                        />
+                    )
+                })}
             </ScrollView>
         </View>
     );

@@ -9,7 +9,7 @@ export default function CardShoppingItns(props) {
         <RectButton style={ContainerShoppingItens.container}>
             <View style={ContainerShoppingItens.info}>
                 <View style={ContainerShoppingItens.infoImage}>
-                    <Image source={{uri:props.image}} />
+                    <Image style={ContainerShoppingItens.infoImageImg} source={{uri:props.imagem}} />
                 </View>
                 <View style={ContainerShoppingItens.infoTexts}>
                     <Text style={ContainerShoppingItens.infoTextsLabel}>{props.description}</Text>

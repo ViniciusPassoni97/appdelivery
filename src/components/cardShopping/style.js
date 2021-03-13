@@ -41,5 +41,9 @@ export const ContainerShoppingItens = StyleSheet.create({
     },
     bottonButtonIcon:{
         marginLeft:10
+    },
+    infoImageImg:{
+        height:130,
+        width:130
     }
 })
