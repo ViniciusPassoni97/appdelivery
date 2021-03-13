@@ -1,0 +1,467 @@
+[33mcommit 1c987c63f956cb4b411923ea13921b475f5aa0e0[m[33m ([m[1;36mHEAD -> [m[1;32mrebase[m[33m)[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Fri Mar 12 20:12:30 2021 -0300
+
+    Adicionando itens no carrinho pelo contexto
+
+[33mcommit 5e7f1b9283092d6ac7bddc0a88db738ec8cf2b66[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Fri Mar 12 13:09:18 2021 -0300
+
+    Colocando props em src/components/cardShoppingCar
+
+[33mcommit fa6c4bfbe40ea1adc67a1b4b4ef50baf1a4fd59e[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Fri Mar 12 10:17:06 2021 -0300
+
+    Adicionando imagem do item no contexto
+
+[33mcommit 61fcc78a84c3767c902a1c65d6d3a2ab8ece8dc0[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Fri Mar 12 10:13:11 2021 -0300
+
+    Colocando importações necessárias para contexto em src/pages/shopping
+
+[33mcommit d6c50c8417a16420ff188761a4b419fddc8b6f90[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Fri Mar 12 10:09:08 2021 -0300
+
+    Adicionando itens no carrinho no contexto
+
+[33mcommit b10ccc880d1ee29dc466588217596a8f3b04c35d[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Fri Mar 12 09:55:21 2021 -0300
+
+    Pegando dados para adicionar no carrinho
+
+[33mcommit 3c81c90eb89dbf4a5e1e45131d3db107325225a4[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Mar 11 22:38:59 2021 -0300
+
+    Removendo as propriedades da função em src/components/cardItens
+
+[33mcommit 657df75b6a8f3f818c4f98a3c7ec7c338e00334d[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Mar 11 18:03:00 2021 -0300
+
+    Style em src/components/cardIten
+
+[33mcommit 5ce2e00d492e36f53ac871d5549183bd42007ecc[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Mar 11 11:45:38 2021 -0300
+
+    Mostrando título do item selecionado em src/pages/item/index.js
+
+[33mcommit bf92552ad7753a447583834d99de3596ab353eef[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Mar 11 11:34:23 2021 -0300
+
+    Modificando função showById em src/controllers/categories
+
+[33mcommit 9b6431805b13cad4637b53f90fe30c9a1777b046[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Mar 11 10:55:03 2021 -0300
+
+    Adicionando props de imagem no componente cardItem
+
+[33mcommit 9fef94c121eae817334622d6401c90b0228cbe93[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 10 22:47:48 2021 -0300
+
+    Pegando informações dos itens para adicionar nos carrinhos
+
+[33mcommit 9d74f61933777ef3ad2cc8fe3a1aa9db082baf19[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 10 22:32:43 2021 -0300
+
+    Iniciando criação do contexto
+
+[33mcommit 416e0ddbb643a49fac258f9bb9dcc43c010e7123[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 10 22:25:31 2021 -0300
+
+    Concertando erro de uri em Image e trabalhando com grid em src/pages/categories
+
+[33mcommit 0f79e3476022ed6cde441af338d561c4bb8270e6[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 10 20:36:28 2021 -0300
+
+    Adicionando key nos maps em src/pages/item e src/pages/categories
+
+[33mcommit 7c63e5c477950807ae3f33fb2df4aafd4f6a01d3[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 10 13:28:24 2021 -0300
+
+    Listando os itens de uma categoria na tela em src/pages/categories/indexc.js
+
+[33mcommit 9a7785fc621c3c9c5b50d3ba157b461d8b5719a3[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 10 13:19:38 2021 -0300
+
+    Buscando itens por id de categoria em src/pages/item/index
+
+[33mcommit 6909b5932a6862eb16497b94d840ec4edfb1ebf2[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 10 12:39:43 2021 -0300
+
+    Excluindo função itemCategories em src/pages/categories
+
+[33mcommit 1c204fcd04f0f853e84e174ec0569bbf651c1054[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 10 12:38:52 2021 -0300
+
+    Passando id de categoria na funcao HandleIten em src/pages/categories e limpando página de item
+
+[33mcommit 9ba383b44cdfbec546de84cd64a3b9c8301e1334[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Tue Mar 9 22:42:33 2021 -0300
+
+    Styles em pages/categories
+
+[33mcommit ce4131cf3f78378451a58e1ed53bc9a16e6cae02[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Tue Mar 9 21:28:25 2021 -0300
+
+    Imagem na listagem de dados da API
+
+[33mcommit fc83e6f9b3add221af29213e0d8e0801d630e164[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Mar 8 23:22:55 2021 -0300
+
+    Iniciando Listagem da api de categories
+
+[33mcommit 768a6639166446a1a192cd36b2873a5fb0b54b13[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Mar 8 22:44:27 2021 -0300
+
+    Comunicando com a api
+
+[33mcommit 4514d98c54cb2eef7a8c2a7b0c7bfdb84081340c[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Mar 7 21:33:45 2021 -0300
+
+    Criando api em src/api/index.js
+
+[33mcommit db18123da753f1bc7e10bef0edcc7de93b189232[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Mar 7 21:26:31 2021 -0300
+
+    Modificando a tela de Splash
+
+[33mcommit 6e64c6cb2b0f9dce781bd6ebaf26c6791f85bad7[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Mar 7 21:21:33 2021 -0300
+
+    Modificando estrutura de src/pages/item
+
+[33mcommit f4d4257a143f4d8244f3ff4330b69a4ba6ef2caa[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Mar 4 22:22:22 2021 -0300
+
+    Novos styles em src/pages/check
+
+[33mcommit 7a77fa4eedfb73e1878c31b1a224c6809d6370f2[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Mar 4 22:02:40 2021 -0300
+
+    Styles de botões em src/pages/check
+
+[33mcommit 7dc72d0214befbb66044a8260ce82aca188e1408[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 3 19:50:37 2021 -0300
+
+    Gerenciamento de estado no marginTop em src/pages/check | buttonPag
+
+[33mcommit 297029caf268c0a8dad7e498402c2f2ce5cc8482[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Wed Mar 3 11:12:33 2021 -0300
+
+    Styles nos textos em src/pages/check
+
+[33mcommit 45ea1e885dd4b27a900d407e59c1640de12177e2[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Tue Mar 2 22:57:52 2021 -0300
+
+    Styles no button em src/pages/check/index
+
+[33mcommit 04f1c57c86274234e754ff6825347810b117b856[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Tue Mar 2 22:32:40 2021 -0300
+
+    Inserindo useState e useEffect em src/check/index.js
+
+[33mcommit c74c4673787f07bac9f5f2cc3a34158e0b16784c[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Mar 1 22:53:13 2021 -0300
+
+    Navegação em src/pages/check
+
+[33mcommit 95afe99fce082928de5bbbc945f04c11d679aa94[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Mar 1 22:49:21 2021 -0300
+
+    Melhorando estrutura e styles em src/pages/check
+
+[33mcommit 5f7633994187c34752d693e72c796f3af1b388a6[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Mar 1 21:30:58 2021 -0300
+
+    Adicionando criação e a rota em src/pages/check/
+
+[33mcommit ed1cec2b63a05b510d920759740eb1765263ef90[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Mar 1 21:22:59 2021 -0300
+
+    Posicionando mapa na Tela
+
+[33mcommit ebe4df5f1766da6408b460ac41aecdcbdd9ed7f4[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Mar 1 21:05:12 2021 -0300
+
+    Iniciando do usuário com mapas
+
+[33mcommit 0f20f2dd0751c0ff07b8d3382d49193f73a0b277[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Mar 1 20:45:19 2021 -0300
+
+    Criando style em src/pages/info
+
+[33mcommit d40de964c74932471228902be2e23312e158fa5b[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Mar 1 20:14:16 2021 -0300
+
+    Estilos em src/components/cardShop
+
+[33mcommit 63a42202b4be3bf461b9eff758920c5aafd643f8[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Feb 21 20:48:11 2021 -0300
+
+    Tirando TextInput em src/pages/categories
+
+[33mcommit 6868c785cd97187f88d8181ce78f28f150aa27d5[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Feb 21 20:40:48 2021 -0300
+
+    Criando estrutura do componente em src/components/cardShopping
+
+[33mcommit 5ddd35ab97a516bfb9239c53635275eaee3cea6a[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Feb 21 20:22:16 2021 -0300
+
+    Removendo importação desnecessária de menu em src/pages/categories
+
+[33mcommit 4792e06f99eaeffc2faf4227e10657ff8602cb46[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Feb 21 14:19:58 2021 -0300
+
+    Navigation em containerHeaderReturn src/pages/shopping e src/components/cardShopping
+
+[33mcommit ae0309765f499663e8d8ca5b58eb0ee5ba6c8b1b[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Feb 21 14:04:37 2021 -0300
+
+    Excluindo componente desnecessário em src/components/menu
+
+[33mcommit 9082e983c3ee19141d1f5d2cdea474e938fab615[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Feb 21 14:03:23 2021 -0300
+
+    Iniciando criação de containerItens em src/pages/shopping
+
+[33mcommit 1fa234e25befac51b0d2088298aa26a5ec43fe31[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Feb 21 13:53:14 2021 -0300
+
+    Style no Header em src/pages/shopping
+
+[33mcommit 758a43edd6be1de43768829f9e2bc6afde8ea388[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sat Feb 20 22:20:05 2021 -0300
+
+    Implementando as paginas em react-navigation/bottom-tabs
+
+[33mcommit 494fa87d05965120f1926bfa9d3f1d57dbb98e35[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sat Feb 20 21:56:00 2021 -0300
+
+    Criando estilizações em src/routes/
+
+[33mcommit 0a1db1e5cd01a62446c785cb891d7b47e3ba876d[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sat Feb 20 19:01:49 2021 -0300
+
+    Refatorando RouteStack em src/routes/index
+
+[33mcommit 9515079aba82fbe0097f5a3f1e73abe42d1c191d[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Feb 8 22:18:57 2021 -0300
+
+    Adicionando navegacao de Shopping
+
+[33mcommit 9f04471ed3ed3ed5a157f7681d8b94c3f78d5384[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Feb 7 13:53:42 2021 -0300
+
+    Estilos em src/components/cardItens
+
+[33mcommit 0bd93c6d02c9303e066bbd802df371836989b608[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Feb 7 13:35:08 2021 -0300
+
+    Usando useNavigation em src/pages/item
+
+[33mcommit d9ce93b2f9d2b8d444b33c55ed11f27f26c8bd21[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sat Feb 6 22:52:18 2021 -0300
+
+    Styles em src/components/cardItem/index.js
+
+[33mcommit c9d27fea31a13244fa926c3206b4b0029857f969[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sat Feb 6 22:51:41 2021 -0300
+
+    Styles em src/components/cardItem/index.js
+
+[33mcommit 2559ebc9d8498864601f1c16fda4bee041f86a4a[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sat Feb 6 22:32:18 2021 -0300
+
+    Estrutura e alguns styles em src/components/cardItens
+
+[33mcommit 1a2def8d7aeb3d75ace2667b16d692ff618b9362[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sat Feb 6 22:08:03 2021 -0300
+
+    Criando containerItensScrow em src/pages/item
+
+[33mcommit 910482e2d8730b81d8cb43ea80e023baecf6fd58[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Tue Feb 2 22:48:18 2021 -0300
+
+    Criando Header em src/pages/item
+
+[33mcommit fe91b0df03eb3de16be8835144744ed96d6d3369[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Tue Feb 2 22:37:14 2021 -0300
+
+    Criando pagina src/pages/item e colocando em ReactNavigation
+
+[33mcommit e51d169b83d1fd9366b5aeb4d0a67c6610251cac[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Fri Jan 29 20:47:41 2021 -0300
+
+    Adicionando HandleIten em src/pages/categories
+
+[33mcommit 6a91136e1d512b861ce216e6bdc8e78787de45e1[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 28 21:38:31 2021 -0300
+
+    Modificando estilo em src/components/menu
+
+[33mcommit ab04e52c89dd66eff8fb32de8db93b28b341a24e[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 28 21:18:41 2021 -0300
+
+    Inseriondo props em src/pages/categories
+
+[33mcommit faf6e1f3fb0a357e95b4c0bb222fe851ac4c0b2e[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 28 21:02:35 2021 -0300
+
+    Iniciando com props em src/components/cardCategories
+
+[33mcommit ea1a4dd5ff2d27bbf72d3255d431817861189c02[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 28 20:35:50 2021 -0300
+
+    Adicionando ScrowView em src/pages/categories
+
+[33mcommit dfead7abac73b06adfdc7bafe720e3ae1fd0b149[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 28 11:25:47 2021 -0300
+
+    Estilos em src/components/cadCategories
+
+[33mcommit 948b260850fc4fa7ef7c9dacf2b99c02ffac9be2[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 28 11:12:13 2021 -0300
+
+    Criando os estilos em src/components/cardCategories
+
+[33mcommit 5247f3cb55bad6b63ce140b9237b12fcd74cb26a[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Thu Jan 28 11:02:50 2021 -0300
+
+    Modificando estrutura em src/components/cardCategories
+
+[33mcommit 0ff27e248a0b971013e906dd91f1b852530715dc[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Tue Jan 26 21:52:11 2021 -0300
+
+    Adicionando criacao de cardCategories em src/pages/categories
+
+[33mcommit c72766f6233cb184287c3dcc76b94aa848fcb1b0[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Tue Jan 26 21:44:41 2021 -0300
+
+    Terminando estilizações de containerCategoriesHeader em src/pages/categories
+
+[33mcommit 378036872eb7816037b9a36988633c4d63c479c7[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Tue Jan 26 21:13:49 2021 -0300
+
+    Proporção em % de Views em src/pages/categories
+
+[33mcommit eef8cff51798ea3c99eccc7f1fa025048de63e95[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Jan 25 22:34:50 2021 -0300
+
+    Adicionando styles em src/pages/categories e criando RectButton em Image
+
+[33mcommit c4d142a21422d686c865f9314f34458228aab07b[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Jan 25 22:24:56 2021 -0300
+
+    Modificação estrutural em src/pages/categories com com styles e View
+
+[33mcommit 969e74a5824425dda560562e782aebf3971f7ec0[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Jan 25 22:09:07 2021 -0300
+
+    Modificação estrutural em src/components/menu com RectButton
+
+[33mcommit 8a589da1ea325f25db00aad1a945d15bb54de7f1[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Jan 25 22:02:02 2021 -0300
+
+    Criando styles em src/components/menu
+
+[33mcommit 32152ca2836dd7ba462d20ded54152ca4f2847db[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Jan 25 21:32:29 2021 -0300
+
+    Iniciando com : src/components/menu e src/pages/categories
+
+[33mcommit e4a7e6f75e399d8137ddbdc6596761d1a4e056ad[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Mon Jan 25 21:15:06 2021 -0300
+
+    Terminando estilização de Buttons
+
+[33mcommit a51ce60b5a06782e6abe6960e39ede04fcad66c4[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Jan 24 20:25:46 2021 -0300
+
+    Colocando onPress em RectButton(como padrão para ReactNavigation)
+
+[33mcommit 1c0b262f618824d8cc38743f1bb28517a7f0c5c0[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Jan 24 12:36:38 2021 -0300
+
+    Estilizando src/pages/splash
+
+[33mcommit 3521ba0d6866059227099a0adc651f9870dc5e21[m
+Author: ViniciusPassoni97 <viniciuspassoni97@gmail.com>
+Date:   Sun Jan 24 11:33:55 2021 -0300
+
+    Implementando @react-navigation em ./App.js
